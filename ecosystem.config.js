@@ -1,6 +1,6 @@
 module.exports = {
   apps: [{
-    name: 'hxh-manga-server',
+    name: 'bluelock-manga-server',
     script: './server.js',
     instances: 1,
     autorestart: true,

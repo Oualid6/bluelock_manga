@@ -13,7 +13,7 @@
  */
 
 const db       = require('./chapters-db');
-const provider = require('../providers/weebcentral-provider');
+const provider = require('../providers/mangafreak-provider');
 
 // The interval between automatic sync runs (24 hours in ms)
 const SYNC_INTERVAL_MS = 24 * 60 * 60 * 1000;

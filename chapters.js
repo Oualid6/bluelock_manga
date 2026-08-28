@@ -2,835 +2,835 @@ const CHAPTERS = [
  
   {
     "number": 1,
-    "title": "The Day Of The Departure"
+    "title": "Chapter 1"
   },
   {
     "number": 2,
-    "title": "In The Tempest"
+    "title": "Chapter 2"
   },
   {
     "number": 3,
-    "title": "Final choice"
+    "title": "Chapter 3"
   },
   {
     "number": 4,
-    "title": "The Monstrous Red - fox"
+    "title": "Chapter 4"
   },
   {
     "number": 5,
-    "title": "First Round - The Trials Begin 1"
+    "title": "Chapter 5"
   },
   {
     "number": 6,
-    "title": "First Round - The Trials Begin2"
+    "title": "Chapter 6"
   },
   {
     "number": 7,
-    "title": "To Each His Own Reasons"
+    "title": "Chapter 7"
   },
   {
     "number": 8,
-    "title": "One-More Adversary"
+    "title": "Chapter 8"
   },
   {
     "number": 9,
-    "title": "Battle In The Mist"
+    "title": "Chapter 9"
   },
   {
     "number": 10,
-    "title": "A Test Unaccounted For"
+    "title": "Chapter 10"
   },
   {
     "number": 11,
-    "title": "An Obvious Result"
+    "title": "Chapter 11"
   },
   {
     "number": 12,
-    "title": "Thr President's Visit"
+    "title": "Chapter 12"
   },
   {
     "number": 13,
-    "title": "A Game at Midnight - 1"
+    "title": "Chapter 13"
   },
   {
     "number": 14,
-    "title": "A Game at Midnight - 2"
+    "title": "Chapter 14"
   },
   {
     "number": 15,
-    "title": "The Way The Majority Decides"
+    "title": "Chapter 15"
   },
   {
     "number": 16,
-    "title": "The Jury"
+    "title": "Chapter 16"
   },
   {
     "number": 17,
-    "title": "Two Identical Choices"
+    "title": "Chapter 17"
   },
   {
     "number": 18,
-    "title": "Two Trumps"
+    "title": "Chapter 18"
   },
   {
     "number": 19,
-    "title": "The Trap Of Majority's Choices"
+    "title": "Chapter 19"
   },
   {
     "number": 20,
-    "title": "Gamble Time"
+    "title": "Chapter 20"
   },
   {
     "number": 21,
-    "title": "Tie Break"
+    "title": "Chapter 21"
   },
   {
     "number": 22,
-    "title": "The Last Problem"
+    "title": "Chapter 22"
   },
   {
     "number": 23,
-    "title": "Two Enemies"
+    "title": "Chapter 23"
   },
   {
     "number": 24,
-    "title": "Special Training"
+    "title": "Chapter 24"
   },
   {
     "number": 25,
-    "title": "The Second Day"
+    "title": "Chapter 25"
   },
   {
     "number": 26,
-    "title": "Final Night's Eve"
+    "title": "Chapter 26"
   },
   {
     "number": 27,
-    "title": "An Explosive Situation"
+    "title": "Chapter 27"
   },
   {
     "number": 28,
-    "title": "A Huge Bet"
+    "title": "Chapter 28"
   },
   {
     "number": 29,
-    "title": "And Killua..."
+    "title": "Chapter 29"
   },
   {
     "number": 30,
-    "title": "A Swarming Trap"
+    "title": "Chapter 30"
   },
   {
     "number": 31,
-    "title": "In Extremis"
+    "title": "Chapter 31"
   },
   {
     "number": 32,
-    "title": "The Last Trial"
+    "title": "Chapter 32"
   },
   {
     "number": 33,
-    "title": "The Last Round"
+    "title": "Chapter 33"
   },
   {
     "number": 34,
-    "title": "First Certified Candidate"
+    "title": "Chapter 34"
   },
   {
     "number": 35,
-    "title": "Shadow And Light"
+    "title": "Chapter 35"
   },
   {
     "number": 36,
-    "title": "Shadow And Light 2"
+    "title": "Chapter 36"
   },
   {
     "number": 37,
-    "title": "Shadow And Light 3"
+    "title": "Chapter 37"
   },
   {
     "number": 38,
-    "title": "Jin Freaks"
+    "title": "Chapter 38"
   },
   {
     "number": 39,
-    "title": "Intruders"
+    "title": "Chapter 39"
   },
   {
     "number": 40,
-    "title": "The Zoldick Family 1"
+    "title": "Chapter 40"
   },
   {
     "number": 41,
-    "title": "The Zoldick Family 2"
+    "title": "Chapter 41"
   },
   {
     "number": 42,
-    "title": "The Zoldick Family 3"
+    "title": "Chapter 42"
   },
   {
     "number": 43,
-    "title": "The Zoldick Family 4"
+    "title": "Chapter 43"
   },
   {
     "number": 44,
-    "title": "Celestial Tournament"
+    "title": "Chapter 44"
   },
   {
     "number": 45,
-    "title": "Ren"
+    "title": "Chapter 45"
   },
   {
     "number": 46,
-    "title": "Nen"
+    "title": "Chapter 46"
   },
   {
     "number": 47,
-    "title": "Invisible Wall"
+    "title": "Chapter 47"
   },
   {
     "number": 48,
-    "title": "Hisoka's Condition"
+    "title": "Chapter 48"
   },
   {
     "number": 49,
-    "title": "May The Fight Begin"
+    "title": "Chapter 49"
   },
   {
     "number": 50,
-    "title": "Zetsu"
+    "title": "Chapter 50"
   },
   {
     "number": 51,
-    "title": "Ten"
+    "title": "Chapter 51"
   },
   {
     "number": 52,
-    "title": "Kastro"
+    "title": "Chapter 52"
   },
   {
     "number": 53,
-    "title": "Double"
+    "title": "Chapter 53"
   },
   {
     "number": 54,
-    "title": "The Reason For The Defeat"
+    "title": "Chapter 54"
   },
   {
     "number": 55,
-    "title": "Hisoka..."
+    "title": "Chapter 55"
   },
   {
     "number": 56,
-    "title": "Beginning of The Training"
+    "title": "Chapter 56"
   },
   {
     "number": 57,
-    "title": "Promise"
+    "title": "Chapter 57"
   },
   {
     "number": 58,
-    "title": "Face To Face Again"
+    "title": "Chapter 58"
   },
   {
     "number": 59,
-    "title": "Qualification"
+    "title": "Chapter 59"
   },
   {
     "number": 60,
-    "title": "Success"
+    "title": "Chapter 60"
   },
   {
     "number": 61,
-    "title": "Decisive Match"
+    "title": "Chapter 61"
   },
   {
     "number": 62,
-    "title": "For Real"
+    "title": "Chapter 62"
   },
   {
     "number": 63,
-    "title": "Its Only Beginning"
+    "title": "Chapter 63"
   },
   {
     "number": 64,
-    "title": "Return Home"
+    "title": "Chapter 64"
   },
   {
     "number": 65,
-    "title": "About Jin"
+    "title": "Chapter 65"
   },
   {
     "number": 66,
-    "title": "A Cassette Tape"
+    "title": "Chapter 66"
   },
   {
     "number": 67,
-    "title": "Body Collector's Mansion 1"
+    "title": "Chapter 67"
   },
   {
     "number": 68,
-    "title": "Body Collector's Mansion 2"
+    "title": "Chapter 68"
   },
   {
     "number": 69,
-    "title": "Greed Island"
+    "title": "Chapter 69"
   },
   {
     "number": 70,
-    "title": "To York Shin"
+    "title": "Chapter 70"
   },
   {
     "number": 71,
-    "title": "Auction Begins"
+    "title": "Chapter 71"
   },
   {
     "number": 72,
-    "title": "September First 1"
+    "title": "Chapter 72"
   },
   {
     "number": 73,
-    "title": "September First 2"
+    "title": "Chapter 73"
   },
   {
     "number": 74,
-    "title": "September First 3"
+    "title": "Chapter 74"
   },
   {
     "number": 75,
-    "title": "September First 4"
+    "title": "Chapter 75"
   },
   {
     "number": 76,
-    "title": "September First 5"
+    "title": "Chapter 76"
   },
   {
     "number": 77,
-    "title": "September First 6"
+    "title": "Chapter 77"
   },
   {
     "number": 78,
-    "title": "September First 7"
+    "title": "Chapter 78"
   },
   {
     "number": 79,
-    "title": "September Second 1"
+    "title": "Chapter 79"
   },
   {
     "number": 80,
-    "title": "September Second 2"
+    "title": "Chapter 80"
   },
   {
     "number": 81,
-    "title": "September Second 3"
+    "title": "Chapter 81"
   },
   {
     "number": 82,
-    "title": "September Second 4"
+    "title": "Chapter 82"
   },
   {
     "number": 83,
-    "title": "September Second 5"
+    "title": "Chapter 83"
   },
   {
     "number": 84,
-    "title": "September Second 6"
+    "title": "Chapter 84"
   },
   {
     "number": 85,
-    "title": "September Third 1"
+    "title": "Chapter 85"
   },
   {
     "number": 86,
-    "title": "September Third 2"
+    "title": "Chapter 86"
   },
   {
     "number": 87,
-    "title": "September Third 3"
+    "title": "Chapter 87"
   },
   {
     "number": 88,
-    "title": "September Third 4"
+    "title": "Chapter 88"
   },
   {
     "number": 89,
-    "title": "September Third 5"
+    "title": "Chapter 89"
   },
   {
     "number": 90,
-    "title": "September Third 6"
+    "title": "Chapter 90"
   },
   {
     "number": 91,
-    "title": "September Third 7"
+    "title": "Chapter 91"
   },
   {
     "number": 92,
-    "title": "September Third 8"
+    "title": "Chapter 92"
   },
   {
     "number": 93,
-    "title": "September Third 9"
+    "title": "Chapter 93"
   },
   {
     "number": 94,
-    "title": "September Third 10"
+    "title": "Chapter 94"
   },
   {
     "number": 95,
-    "title": "September Third 11"
+    "title": "Chapter 95"
   },
   {
     "number": 96,
-    "title": "September Third 12"
+    "title": "Chapter 96"
   },
   {
     "number": 97,
-    "title": "September Third 13"
+    "title": "Chapter 97"
   },
   {
     "number": 98,
-    "title": "September Third 14"
+    "title": "Chapter 98"
   },
   {
     "number": 99,
-    "title": "September Third 15"
+    "title": "Chapter 99"
   },
   {
     "number": 100,
-    "title": "September Third 15"
+    "title": "Chapter 100"
   },
   {
     "number": 101,
-    "title": "September Third 16"
+    "title": "Chapter 101"
   },
   {
     "number": 102,
-    "title": "September Fourth 1"
+    "title": "Chapter 102"
   },
   {
     "number": 103,
-    "title": "September Fourth 2"
+    "title": "Chapter 103"
   },
   {
     "number": 104,
-    "title": "September Fourth 3"
+    "title": "Chapter 104"
   },
   {
     "number": 105,
-    "title": "September Fourth 4"
+    "title": "Chapter 105"
   },
   {
     "number": 106,
-    "title": "September Fourth 5"
+    "title": "Chapter 106"
   },
   {
     "number": 107,
-    "title": "September Fourth 6"
+    "title": "Chapter 107"
   },
   {
     "number": 108,
-    "title": "September Fourth 7"
+    "title": "Chapter 108"
   },
   {
     "number": 109,
-    "title": "September Fourth 8"
+    "title": "Chapter 109"
   },
   {
     "number": 110,
-    "title": "September Fourth 9"
+    "title": "Chapter 110"
   },
   {
     "number": 111,
-    "title": "September Fourth 10"
+    "title": "Chapter 111"
   },
   {
     "number": 112,
-    "title": "September Fourth 11"
+    "title": "Chapter 112"
   },
   {
     "number": 113,
-    "title": "September Fourth 12"
+    "title": "Chapter 113"
   },
   {
     "number": 114,
-    "title": "September Fourth 13"
+    "title": "Chapter 114"
   },
   {
     "number": 115,
-    "title": "September Fourth 14"
+    "title": "Chapter 115"
   },
   {
     "number": 116,
-    "title": "September Fourth 15"
+    "title": "Chapter 116"
   },
   {
     "number": 117,
-    "title": "September Fourth 16"
+    "title": "Chapter 117"
   },
   {
     "number": 118,
-    "title": "September Fourth 17"
+    "title": "Chapter 118"
   },
   {
     "number": 119,
-    "title": "September Fourth 18"
+    "title": "Chapter 119"
   },
   {
     "number": 120,
-    "title": "September Sixth 1"
+    "title": "Chapter 120"
   },
   {
     "number": 121,
-    "title": "September Sixth 2"
+    "title": "Chapter 121"
   },
   {
     "number": 122,
-    "title": "September Sixth 3"
+    "title": "Chapter 122"
   },
   {
     "number": 123,
-    "title": "September Sixth 4"
+    "title": "Chapter 123"
   },
   {
     "number": 124,
-    "title": "September Seventh 1 - September Tenth 1"
+    "title": "Chapter 124"
   },
   {
     "number": 125,
-    "title": "September Tenth 2"
+    "title": "Chapter 125"
   },
   {
     "number": 126,
-    "title": "September Tenth 3"
+    "title": "Chapter 126"
   },
   {
     "number": 127,
-    "title": "September Tenth 4"
+    "title": "Chapter 127"
   },
   {
     "number": 128,
-    "title": "September Tenth 5"
+    "title": "Chapter 128"
   },
   {
     "number": 129,
-    "title": "Prize City Antokiba"
+    "title": "Chapter 129"
   },
   {
     "number": 130,
-    "title": "The Reason For The Invitation"
+    "title": "Chapter 130"
   },
   {
     "number": 131,
-    "title": "Answer"
+    "title": "Chapter 131"
   },
   {
     "number": 132,
-    "title": "40 Kinds Of Spells"
+    "title": "Chapter 132"
   },
   {
     "number": 133,
-    "title": "Defending With No Spells"
+    "title": "Chapter 133"
   },
   {
     "number": 134,
-    "title": "Game's Secret"
+    "title": "Chapter 134"
   },
   {
     "number": 135,
-    "title": "Off To Masadora 1"
+    "title": "Chapter 135"
   },
   {
     "number": 136,
-    "title": "Off To Masadora 2"
+    "title": "Chapter 136"
   },
   {
     "number": 137,
-    "title": "Off To Masadora 3"
+    "title": "Chapter 137"
   },
   {
     "number": 138,
-    "title": "Off To Masadora...."
+    "title": "Chapter 138"
   },
   {
     "number": 139,
-    "title": "We're Really Going To Masadora huh.."
+    "title": "Chapter 139"
   },
   {
     "number": 140,
-    "title": "Went To Masadora, But..."
+    "title": "Chapter 140"
   },
   {
     "number": 141,
-    "title": "We Already Went To Masadora, So Next Time Lets Use Some Other Title"
+    "title": "Chapter 141"
   },
   {
     "number": 142,
-    "title": "The Bomb Devil"
+    "title": "Chapter 142"
   },
   {
     "number": 143,
-    "title": "Countdown - Sound-of-Fate"
+    "title": "Chapter 143"
   },
   {
     "number": 144,
-    "title": "Release"
+    "title": "Chapter 144"
   },
   {
     "number": 145,
-    "title": "Jaken Equals-To Janken!.."
+    "title": "Chapter 145"
   },
   {
     "number": 146,
-    "title": "Abengane 1"
+    "title": "Chapter 146"
   },
   {
     "number": 147,
-    "title": "Abengane 2"
+    "title": "Chapter 147"
   },
   {
     "number": 148,
-    "title": "Beginning Of The Exam"
+    "title": "Chapter 148"
   },
   {
     "number": 149,
-    "title": "Welcome To Greed Island"
+    "title": "Chapter 149"
   },
   {
     "number": 150,
-    "title": "Starting"
+    "title": "Chapter 150"
   },
   {
     "number": 151,
-    "title": "Rush"
+    "title": "Chapter 151"
   },
   {
     "number": 152,
-    "title": "Contact"
+    "title": "Chapter 152"
   },
   {
     "number": 153,
-    "title": "Success"
+    "title": "Chapter 153"
   },
   {
     "number": 154,
-    "title": "United Front"
+    "title": "Chapter 154"
   },
   {
     "number": 155,
-    "title": "The Captain and His 14 Devils"
+    "title": "Chapter 155"
   },
   {
     "number": 156,
-    "title": "Duels 1"
+    "title": "Chapter 156"
   },
   {
     "number": 157,
-    "title": "Duels 2"
+    "title": "Chapter 157"
   },
   {
     "number": 158,
-    "title": "Reassembling Companions"
+    "title": "Chapter 158"
   },
   {
     "number": 159,
-    "title": "Love Love, The City Of Romance"
+    "title": "Chapter 159"
   },
   {
     "number": 160,
-    "title": "Duels 3"
+    "title": "Chapter 160"
   },
   {
     "number": 161,
-    "title": "Duels 4"
+    "title": "Chapter 161"
   },
   {
     "number": 162,
-    "title": "Duels 5"
+    "title": "Chapter 162"
   },
   {
     "number": 163,
-    "title": "Duels 6"
+    "title": "Chapter 163"
   },
   {
     "number": 164,
-    "title": "Face Off 7"
+    "title": "Chapter 164"
   },
   {
     "number": 165,
-    "title": "Face Off 8"
+    "title": "Chapter 165"
   },
   {
     "number": 166,
-    "title": "Face Off 9"
+    "title": "Chapter 166"
   },
   {
     "number": 167,
-    "title": "Face Off 10"
+    "title": "Chapter 167"
   },
   {
     "number": 168,
-    "title": "Face Off 11"
+    "title": "Chapter 168"
   },
   {
     "number": 169,
-    "title": "Declaration Of War"
+    "title": "Chapter 169"
   },
   {
     "number": 170,
-    "title": "Attack Of Three 1"
+    "title": "Chapter 170"
   },
   {
     "number": 171,
-    "title": "Attack Of Three 2"
+    "title": "Chapter 171"
   },
   {
     "number": 172,
-    "title": "Attack Of Three 3"
+    "title": "Chapter 172"
   },
   {
     "number": 173,
-    "title": "Attack Of Three 4"
+    "title": "Chapter 173"
   },
   {
     "number": 174,
-    "title": "Attack Of Three 5"
+    "title": "Chapter 174"
   },
   {
     "number": 175,
-    "title": "Attack Of Three 6"
+    "title": "Chapter 175"
   },
   {
     "number": 176,
-    "title": "Attack Of Three 7"
+    "title": "Chapter 176"
   },
   {
     "number": 177,
-    "title": "Attack Of Three 8"
+    "title": "Chapter 177"
   },
   {
     "number": 178,
-    "title": "Attack Of Three 9"
+    "title": "Chapter 178"
   },
   {
     "number": 179,
-    "title": "Attack Of Three 10"
+    "title": "Chapter 179"
   },
   {
     "number": 180,
-    "title": "Attack Of Three 11"
+    "title": "Chapter 180"
   },
   {
     "number": 181,
-    "title": "Attack Of Three 12"
+    "title": "Chapter 181"
   },
   {
     "number": 182,
-    "title": "Attack Of Three 13"
+    "title": "Chapter 182"
   },
   {
     "number": 183,
-    "title": "Attack Of Three 14"
+    "title": "Chapter 183"
   },
   {
     "number": 184,
-    "title": "Selection Of The 3 Cards"
+    "title": "Chapter 184"
   },
   {
     "number": 185,
-    "title": "Change Meeting"
+    "title": "Chapter 185"
   },
   {
     "number": 186,
-    "title": "Queen"
+    "title": "Chapter 186"
   },
   {
     "number": 187,
-    "title": "The Ultimate Prey"
+    "title": "Chapter 187"
   },
   {
     "number": 188,
-    "title": "NGL"
+    "title": "Chapter 188"
   },
   {
     "number": 189,
-    "title": "Infiltrate"
+    "title": "Chapter 189"
   },
   {
     "number": 190,
-    "title": "The Hunt"
+    "title": "Chapter 190"
   },
   {
     "number": 191,
-    "title": "70"
+    "title": "Chapter 191"
   },
   {
     "number": 192,
-    "title": "Human - Dog"
+    "title": "Chapter 192"
   },
   {
     "number": 193,
-    "title": "Choki"
+    "title": "Chapter 193"
   },
   {
     "number": 194,
-    "title": "The Hagya Squad"
+    "title": "Chapter 194"
   },
   {
     "number": 195,
-    "title": "The Hagya Squad 2"
+    "title": "Chapter 195"
   },
   {
     "number": 196,
-    "title": "The Hagya Squad 3"
+    "title": "Chapter 196"
   },
   {
     "number": 197,
-    "title": "The Hagya Squad 4"
+    "title": "Chapter 197"
   },
   {
     "number": 198,
-    "title": "Assault"
+    "title": "Chapter 198"
   },
   {
     "number": 199,
-    "title": "Light And Shadow"
+    "title": "Chapter 199"
   },
   {
     "number": 200,
-    "title": "The Conpition"
+    "title": "Chapter 200"
   },
   {
     "number": 201,
-    "title": "Reunited"
+    "title": "Chapter 201"
   },
   {
     "number": 202,
-    "title": "Duel"
+    "title": "Chapter 202"
   },
   {
     "number": 203,
-    "title": "Jairo"
+    "title": "Chapter 203"
   },
   {
     "number": 204,
-    "title": "About Jairo"
+    "title": "Chapter 204"
   },
   {
     "number": 205,
-    "title": "Remaining Time"
+    "title": "Chapter 205"
   },
   {
     "number": 206,
-    "title": "Victory Or Defeat"
+    "title": "Chapter 206"
   },
   {
     "number": 207,
-    "title": "Weakness 1"
+    "title": "Chapter 207"
   },
   {
     "number": 208,
-    "title": "Weakness 2"
+    "title": "Chapter 208"
   },
   {
     "number": 209,
@@ -838,839 +838,599 @@ const CHAPTERS = [
   },
   {
     "number": 210,
-    "title": "Weakness 3"
+    "title": "Chapter 210"
   },
   {
     "number": 211,
-    "title": "Toichi"
+    "title": "Chapter 211"
   },
   {
     "number": 212,
-    "title": "Rupture"
+    "title": "Chapter 212"
   },
   {
     "number": 213,
-    "title": "Birth"
+    "title": "Chapter 213"
   },
   {
     "number": 214,
-    "title": "Decision"
+    "title": "Chapter 214"
   },
   {
     "number": 215,
-    "title": "Dyine Wish"
+    "title": "Chapter 215"
   },
   {
     "number": 216,
-    "title": "The Republic Of East Goruto"
+    "title": "Chapter 216"
   },
   {
     "number": 217,
-    "title": "Meat Garden"
+    "title": "Chapter 217"
   },
   {
     "number": 218,
-    "title": "Confession"
+    "title": "Chapter 218"
   },
   {
     "number": 219,
-    "title": "Awakening"
+    "title": "Chapter 219"
   },
   {
     "number": 220,
-    "title": "Reunion 1"
+    "title": "Chapter 220"
   },
   {
     "number": 221,
-    "title": "Reunion 2"
+    "title": "Chapter 221"
   },
   {
     "number": 222,
-    "title": "Reunion 3"
+    "title": "Chapter 222"
   },
   {
     "number": 223,
-    "title": "10 - 1"
+    "title": "Chapter 223"
   },
   {
     "number": 224,
-    "title": "10 - 2"
+    "title": "Chapter 224"
   },
   {
     "number": 225,
-    "title": "10 - 3"
+    "title": "Chapter 225"
   },
   {
     "number": 226,
-    "title": "10 - 4"
+    "title": "Chapter 226"
   },
   {
     "number": 227,
-    "title": "10 - 5"
+    "title": "Chapter 227"
   },
   {
     "number": 228,
-    "title": "10 - 6"
+    "title": "Chapter 228"
   },
   {
     "number": 229,
-    "title": "10 - 7"
+    "title": "Chapter 229"
   },
   {
     "number": 230,
-    "title": "9 - 1"
+    "title": "Chapter 230"
   },
   {
     "number": 231,
-    "title": "9 - 2"
+    "title": "Chapter 231"
   },
   {
     "number": 232,
-    "title": "9 - 3"
+    "title": "Chapter 232"
   },
   {
     "number": 233,
-    "title": "9 - 4"
+    "title": "Chapter 233"
   },
   {
     "number": 234,
-    "title": "9 - 5"
+    "title": "Chapter 234"
   },
   {
     "number": 235,
-    "title": "8 - 1"
+    "title": "Chapter 235"
   },
   {
     "number": 236,
-    "title": "8 - 2"
+    "title": "Chapter 236"
   },
   {
     "number": 237,
-    "title": "8 - 3"
+    "title": "Chapter 237"
   },
   {
     "number": 238,
-    "title": "8 - 4"
+    "title": "Chapter 238"
   },
   {
     "number": 239,
-    "title": "8 - 5"
+    "title": "Chapter 239"
   },
   {
     "number": 240,
-    "title": "8 - 6"
+    "title": "Chapter 240"
   },
   {
     "number": 241,
-    "title": "8 - 7"
+    "title": "Chapter 241"
   },
   {
     "number": 242,
-    "title": "7 - 1"
+    "title": "Chapter 242"
   },
   {
     "number": 243,
-    "title": "7 - 2"
+    "title": "Chapter 243"
   },
   {
     "number": 244,
-    "title": "6 - 1"
+    "title": "Chapter 244"
   },
   {
     "number": 245,
-    "title": "6 - 2"
+    "title": "Chapter 245"
   },
   {
     "number": 246,
-    "title": "6 - 3"
+    "title": "Chapter 246"
   },
   {
     "number": 247,
-    "title": "6 - 4"
+    "title": "Chapter 247"
   },
   {
     "number": 248,
-    "title": "6 - 5"
+    "title": "Chapter 248"
   },
   {
     "number": 249,
-    "title": "6 - 6"
+    "title": "Chapter 249"
   },
   {
     "number": 250,
-    "title": "6 - 7"
+    "title": "Chapter 250"
   },
   {
     "number": 251,
-    "title": "6 - 8"
+    "title": "Chapter 251"
   },
   {
     "number": 252,
-    "title": "6 - 9"
+    "title": "Chapter 252"
   },
   {
     "number": 253,
-    "title": "6 - 10"
+    "title": "Chapter 253"
   },
   {
     "number": 254,
-    "title": "6 - 11"
+    "title": "Chapter 254"
   },
   {
     "number": 255,
-    "title": "5 - 1~2 - 1"
+    "title": "Chapter 255"
   },
   {
     "number": 256,
-    "title": "2 - 2"
+    "title": "Chapter 256"
   },
   {
     "number": 257,
-    "title": "Part 1"
+    "title": "Chapter 257"
   },
   {
     "number": 258,
-    "title": "1 - 2"
+    "title": "Chapter 258"
   },
   {
     "number": 259,
-    "title": "1 - 3"
+    "title": "Chapter 259"
   },
   {
     "number": 260,
-    "title": "1 - 4"
+    "title": "Chapter 260"
   },
   {
     "number": 261,
-    "title": "Charge 1"
+    "title": "Chapter 261"
   },
   {
     "number": 262,
-    "title": "Break In 2"
+    "title": "Chapter 262"
   },
   {
     "number": 263,
-    "title": "Break In 3"
+    "title": "Chapter 263"
   },
   {
     "number": 264,
-    "title": "Break In 4"
+    "title": "Chapter 264"
   },
   {
     "number": 265,
-    "title": "Break In 5"
+    "title": "Chapter 265"
   },
   {
     "number": 266,
-    "title": "One in a Million"
+    "title": "Chapter 266"
   },
   {
     "number": 267,
-    "title": "Activation"
+    "title": "Chapter 267"
   },
   {
     "number": 268,
-    "title": "The King"
+    "title": "Chapter 268"
   },
   {
     "number": 269,
-    "title": "Loan"
+    "title": "Chapter 269"
   },
   {
     "number": 270,
-    "title": "Spiritual Message"
+    "title": "Chapter 270"
   },
   {
     "number": 271,
-    "title": "Seperation"
+    "title": "Chapter 271"
   },
   {
     "number": 272,
-    "title": "Miscalculation"
+    "title": "Chapter 272"
   },
   {
     "number": 273,
-    "title": "Reunion"
+    "title": "Chapter 273"
   },
   {
     "number": 274,
-    "title": "Answer"
+    "title": "Chapter 274"
   },
   {
     "number": 275,
-    "title": "Promise"
+    "title": "Chapter 275"
   },
   {
     "number": 276,
-    "title": "Missileman"
+    "title": "Chapter 276"
   },
   {
     "number": 277,
-    "title": "Insult"
+    "title": "Chapter 277"
   },
   {
     "number": 278,
-    "title": "Destruction"
+    "title": "Chapter 278"
   },
   {
     "number": 279,
-    "title": "Escape"
+    "title": "Chapter 279"
   },
   {
     "number": 280,
-    "title": "Direct Hit"
+    "title": "Chapter 280"
   },
   {
     "number": 281,
-    "title": "Kanmaru"
+    "title": "Chapter 281"
   },
   {
     "number": 282,
-    "title": "Sealed Off"
+    "title": "Chapter 282"
   },
   {
     "number": 283,
-    "title": "Resolve"
+    "title": "Chapter 283"
   },
   {
     "number": 284,
-    "title": "Fifteen Minutes"
+    "title": "Chapter 284"
   },
   {
     "number": 285,
-    "title": "Clones"
+    "title": "Chapter 285"
   },
   {
     "number": 286,
-    "title": "Main Body"
+    "title": "Chapter 286"
   },
   {
     "number": 287,
-    "title": "Situation"
+    "title": "Chapter 287"
   },
   {
     "number": 288,
-    "title": "Praise"
+    "title": "Chapter 288"
   },
   {
     "number": 289,
-    "title": "Condition"
+    "title": "Chapter 289"
   },
   {
     "number": 290,
-    "title": "Name"
+    "title": "Chapter 290"
   },
   {
     "number": 291,
-    "title": "Asking Oneself"
+    "title": "Chapter 291"
   },
   {
     "number": 292,
-    "title": "Expectation"
+    "title": "Chapter 292"
   },
   {
     "number": 293,
-    "title": "Metamorphosis"
+    "title": "Chapter 293"
   },
   {
     "number": 294,
-    "title": "Break Down"
+    "title": "Chapter 294"
   },
   {
     "number": 295,
-    "title": "Determination"
+    "title": "Chapter 295"
   },
   {
     "number": 296,
-    "title": "Memories"
+    "title": "Chapter 296"
   },
   {
     "number": 297,
-    "title": "The Last"
+    "title": "Chapter 297"
   },
   {
     "number": 298,
-    "title": "Rose"
+    "title": "Chapter 298"
   },
   {
     "number": 299,
-    "title": "Rebirth"
+    "title": "Chapter 299"
   },
   {
     "number": 300,
-    "title": "Insurance"
+    "title": "Chapter 300"
   },
   {
     "number": 301,
-    "title": "Memories"
+    "title": "Chapter 301"
   },
   {
     "number": 302,
-    "title": "Target"
+    "title": "Chapter 302"
   },
   {
     "number": 303,
-    "title": "Pain"
+    "title": "Chapter 303"
   },
   {
     "number": 304,
-    "title": "Magic"
+    "title": "Chapter 304"
   },
   {
     "number": 305,
-    "title": "Bad Luck"
+    "title": "Chapter 305"
   },
   {
     "number": 306,
-    "title": "Relief"
+    "title": "Chapter 306"
   },
   {
     "number": 307,
-    "title": "Loss"
+    "title": "Chapter 307"
   },
   {
     "number": 308,
-    "title": "Flash"
+    "title": "Chapter 308"
   },
   {
     "number": 309,
-    "title": "Competition"
+    "title": "Chapter 309"
   },
   {
     "number": 310,
-    "title": "Start"
+    "title": "Chapter 310"
   },
   {
     "number": 311,
-    "title": "Time Limit"
+    "title": "Chapter 311"
   },
   {
     "number": 312,
-    "title": "Resolve"
+    "title": "Chapter 312"
   },
   {
     "number": 313,
-    "title": "A Single Word"
+    "title": "Chapter 313"
   },
   {
     "number": 314,
-    "title": "Persuasion"
+    "title": "Chapter 314"
   },
   {
     "number": 315,
-    "title": "Homecoming"
+    "title": "Chapter 315"
   },
   {
     "number": 316,
-    "title": "Real Name"
+    "title": "Chapter 316"
   },
   {
     "number": 317,
-    "title": "Reply"
+    "title": "Chapter 317"
   },
   {
     "number": 318,
-    "title": "Last Will"
+    "title": "Chapter 318"
   },
   {
     "number": 319,
-    "title": "Lot Drawing"
+    "title": "Chapter 319"
   },
   {
     "number": 320,
-    "title": "Voting"
+    "title": "Chapter 320"
   },
   {
     "number": 321,
-    "title": "Monster"
+    "title": "Chapter 321"
   },
   {
     "number": 322,
-    "title": "Siblings"
+    "title": "Chapter 322"
   },
   {
     "number": 323,
-    "title": "Request"
+    "title": "Chapter 323"
   },
   {
     "number": 324,
-    "title": "Butlers"
+    "title": "Chapter 324"
   },
   {
     "number": 325,
-    "title": "Joining the Battle"
+    "title": "Chapter 325"
   },
   {
     "number": 326,
-    "title": "The Opening Of Battle"
+    "title": "Chapter 326"
   },
   {
     "number": 327,
-    "title": "Riddle"
+    "title": "Chapter 327"
   },
   {
     "number": 328,
-    "title": "Arrangements"
+    "title": "Chapter 328"
   },
   {
     "number": 329,
-    "title": "Spy"
+    "title": "Chapter 329"
   },
   {
     "number": 330,
-    "title": "Confession"
+    "title": "Chapter 330"
   },
   {
     "number": 331,
-    "title": "X Day"
+    "title": "Chapter 331"
   },
   {
     "number": 332,
-    "title": "Applause"
+    "title": "Chapter 332"
   },
   {
     "number": 333,
-    "title": "Rumbles"
+    "title": "Chapter 333"
   },
   {
     "number": 334,
-    "title": "Complete Defeat"
+    "title": "Chapter 334"
   },
   {
     "number": 335,
-    "title": "Decision"
+    "title": "Chapter 335"
   },
   {
     "number": 336,
-    "title": "Cancel"
+    "title": "Chapter 336"
   },
   {
     "number": 337,
-    "title": "Confession"
+    "title": "Chapter 337"
   },
   {
     "number": 338,
-    "title": "Up In The Trees"
+    "title": "Chapter 338"
   },
   {
     "number": 339,
-    "title": "Silence"
+    "title": "Chapter 339"
   },
   {
     "number": 340,
-    "title": "Special Assignment"
+    "title": "Chapter 340"
   },
   {
     "number": 341,
-    "title": "Calamity"
+    "title": "Chapter 341"
   },
   {
     "number": 342,
-    "title": "Ordinance"
+    "title": "Chapter 342"
   },
   {
     "number": 343,
-    "title": "Invitation"
+    "title": "Chapter 343"
   },
   {
     "number": 344,
-    "title": "Author"
+    "title": "Chapter 344"
   },
   {
     "number": 345,
-    "title": "Signature."
+    "title": "Chapter 345"
   },
   {
     "number": 346,
-    "title": "Choices"
+    "title": "Chapter 346"
   },
   {
     "number": 347,
-    "title": "Inauguration"
+    "title": "Chapter 347"
   },
   {
     "number": 348,
-    "title": "Preparedness"
+    "title": "Chapter 348"
   },
   {
     "number": 349,
-    "title": "Poisoning"
+    "title": "Chapter 349"
   },
   {
     "number": 350,
-    "title": "The Princes"
+    "title": "Chapter 350"
   },
   {
     "number": 351,
-    "title": "Deathmatch"
+    "title": "Chapter 351"
   },
   {
     "number": 352,
-    "title": "Troublesome"
+    "title": "Chapter 352"
   },
   {
     "number": 353,
-    "title": "Devious"
+    "title": "Chapter 353"
   },
   {
     "number": 354,
-    "title": "Head"
+    "title": "Chapter 354"
   },
   {
     "number": 355,
-    "title": "Explosion"
+    "title": "Chapter 355"
   },
   {
     "number": 356,
-    "title": "Disappointment"
+    "title": "Chapter 356"
   },
   {
     "number": 357,
-    "title": "Disappointment (002)"
+    "title": "Chapter 357"
   },
   {
     "number": 358,
-    "title": "Eve"
-  },
-  {
-    "number": 359,
-    "title": "Departure"
-  },
-  {
-    "number": 360,
-    "title": "Parasite"
-  },
-  {
-    "number": 361,
-    "title": "Withdrawal"
-  },
-  {
-    "number": 362,
-    "title": "Determination"
-  },
-  {
-    "number": 363,
-    "title": "Nen Beasts"
-  },
-  {
-    "number": 364,
-    "title": "Expectation"
-  },
-  {
-    "number": 365,
-    "title": "Choice"
-  },
-  {
-    "number": 366,
-    "title": "Each"
-  },
-  {
-    "number": 367,
-    "title": "Synchronization"
-  },
-  {
-    "number": 368,
-    "title": "Murder"
-  },
-  {
-    "number": 369,
-    "title": "Limit"
-  },
-  {
-    "number": 370,
-    "title": "Observation"
-  },
-  {
-    "number": 371,
-    "title": "Chapter 371"
-  },
-  {
-    "number": 372,
-    "title": "Elimination"
-  },
-  {
-    "number": 373,
-    "title": "Chapter 373"
-  },
-  {
-    "number": 374,
-    "title": "Ability"
-  },
-  {
-    "number": 375,
-    "title": "Persuasion"
-  },
-  {
-    "number": 376,
-    "title": "Determination"
-  },
-  {
-    "number": 377,
-    "title": "Scheme"
-  },
-  {
-    "number": 378,
-    "title": "Balance"
-  },
-  {
-    "number": 379,
-    "title": "Collaboration"
-  },
-  {
-    "number": 380,
-    "title": "Alarm"
-  },
-  {
-    "number": 381,
-    "title": "Predation"
-  },
-  {
-    "number": 382,
-    "title": "Awakening"
-  },
-  {
-    "number": 383,
-    "title": "Escape"
-  },
-  {
-    "number": 384,
-    "title": "Conflict"
-  },
-  {
-    "number": 385,
-    "title": "Warning"
-  },
-  {
-    "number": 386,
-    "title": "Hypothesis"
-  },
-  {
-    "number": 387,
-    "title": "Return"
-  },
-  {
-    "number": 388,
-    "title": "Chapter 388"
-  },
-  {
-    "number": 389,
-    "title": "Curse"
-  },
-  {
-    "number": 390,
-    "title": "Clash"
-  },
-  {
-    "number": 391,
-    "title": "Clash ②"
-  },
-  {
-    "number": 392,
-    "title": "Chapter 392"
-  },
-  {
-    "number": 393,
-    "title": "Solicit"
-  },
-  {
-    "number": 394,
-    "title": "Plan"
-  },
-  {
-    "number": 395,
-    "title": "Formation ①"
-  },
-  {
-    "number": 396,
-    "title": "Formation ②"
-  },
-  {
-    "number": 397,
-    "title": "Formation ③"
-  },
-  {
-    "number": 398,
-    "title": "Search"
-  },
-  {
-    "number": 399,
-    "title": "Eviction"
-  },
-  {
-    "number": 400,
-    "title": "Concealed"
-  },
-  {
-    "number": 401,
-    "title": "Chapter 401"
-  },
-  {
-    "number": 402,
-    "title": "Chapter 402"
-  },
-  {
-    "number": 403,
-    "title": "Chapter 403"
-  },
-  {
-    "number": 404,
-    "title": "Chapter 404"
-  },
-  {
-    "number": 405,
-    "title": "Chapter 405"
-  },
-  {
-    "number": 406,
-    "title": "Chapter 406"
-  },
-  {
-    "number": 407,
-    "title": "Chapter 407"
-  },
-  {
-    "number": 408,
-    "title": "Chapter 408"
-  },
-  {
-    "number": 409,
-    "title": "Chapter 409"
-  },
-  {
-    "number": 410,
-    "title": "Chapter 410"
-  },
-  {
-    "number": 411,
-    "title": "Chapter 411"
-  },
-  {
-    "number": 412,
-    "title": "Chapter 412"
-  },
-  {
-    "number": 413,
-    "title": "Chapter 413"
-  },
-  {
-    "number": 414,
-    "title": "Chapter 414"
-  },
-  {
-    "number": 415,
-    "title": "Chapter 415"
-  },
-  {
-    "number": 416,
-    "title": "Chapter 416"
-  },
-  {
-    "number": 417,
-    "title": "Chapter 417"
-  },
-  {
-    "number": 418,
-    "title": "Chapter 418"
+    "title": "Chapter 358"
   }
 
 ];
