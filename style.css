@@ -390,9 +390,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   gap: 8px;
   padding: 6px 14px;
   border-radius: 999px;
-  background: rgba(126,211,33,.1);
-  border: 1px solid rgba(126,211,33,.2);
-  color: var(--teal);
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.25);
+  color: #FFFFFF;
   font-size: .8rem;
   font-weight: 600;
   letter-spacing: .5px;
@@ -403,7 +404,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .badge-dot {
   width: 7px; height: 7px;
   border-radius: 50%;
-  background: var(--teal);
+  background: #FFFFFF;
   animation: pulse-dot 2s ease infinite;
 }
 @keyframes pulse-dot {
