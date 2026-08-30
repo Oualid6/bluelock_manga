@@ -1,6 +1,98 @@
+# API & Function Routes
 /cover-image        /.netlify/functions/cover-image      200
 /chapter-images     /.netlify/functions/chapter-images   200
 /proxy-image        /.netlify/functions/proxy-image      200
+
+# Direct Static Page Clean URLs
+/privacy            /privacy.html                         200
+/privacy-policy     /privacy.html                         200
+/terms              /terms.html                           200
+/terms-and-conditions /terms.html                         200
+/dmca               /dmca.html                            200
+/disclaimer         /disclaimer.html                      200
+/contact            /contact.html                         200
+
+# Language Prefixed Static Pages (Privacy)
+/en/privacy.html    /privacy.html                         200
+/fr/privacy.html    /privacy.html                         200
+/es/privacy.html    /privacy.html                         200
+/de/privacy.html    /privacy.html                         200
+/tr/privacy.html    /privacy.html                         200
+/ja/privacy.html    /privacy.html                         200
+/ar/privacy.html    /privacy.html                         200
+/en/privacy         /privacy.html                         200
+/fr/privacy         /privacy.html                         200
+/es/privacy         /privacy.html                         200
+/de/privacy         /privacy.html                         200
+/tr/privacy         /privacy.html                         200
+/ja/privacy         /privacy.html                         200
+/ar/privacy         /privacy.html                         200
+
+# Language Prefixed Static Pages (Terms)
+/en/terms.html      /terms.html                           200
+/fr/terms.html      /terms.html                           200
+/es/terms.html      /terms.html                           200
+/de/terms.html      /terms.html                           200
+/tr/terms.html      /terms.html                           200
+/ja/terms.html      /terms.html                           200
+/ar/terms.html      /terms.html                           200
+/en/terms           /terms.html                           200
+/fr/terms           /terms.html                           200
+/es/terms           /terms.html                           200
+/de/terms           /terms.html                           200
+/tr/terms           /terms.html                           200
+/ja/terms           /terms.html                           200
+/ar/terms           /terms.html                           200
+
+# Language Prefixed Static Pages (DMCA)
+/en/dmca.html       /dmca.html                            200
+/fr/dmca.html       /dmca.html                            200
+/es/dmca.html       /dmca.html                            200
+/de/dmca.html       /dmca.html                            200
+/tr/dmca.html       /dmca.html                            200
+/ja/dmca.html       /dmca.html                            200
+/ar/dmca.html       /dmca.html                            200
+/en/dmca            /dmca.html                            200
+/fr/dmca            /dmca.html                            200
+/es/dmca            /dmca.html                            200
+/de/dmca            /dmca.html                            200
+/tr/dmca            /dmca.html                            200
+/ja/dmca            /dmca.html                            200
+/ar/dmca            /dmca.html                            200
+
+# Language Prefixed Static Pages (Disclaimer)
+/en/disclaimer.html /disclaimer.html                      200
+/fr/disclaimer.html /disclaimer.html                      200
+/es/disclaimer.html /disclaimer.html                      200
+/de/disclaimer.html /disclaimer.html                      200
+/tr/disclaimer.html /disclaimer.html                      200
+/ja/disclaimer.html /disclaimer.html                      200
+/ar/disclaimer.html /disclaimer.html                      200
+/en/disclaimer      /disclaimer.html                      200
+/fr/disclaimer      /disclaimer.html                      200
+/es/disclaimer      /disclaimer.html                      200
+/de/disclaimer      /disclaimer.html                      200
+/tr/disclaimer      /disclaimer.html                      200
+/ja/disclaimer      /disclaimer.html                      200
+/ar/disclaimer      /disclaimer.html                      200
+
+# Language Prefixed Static Pages (Contact)
+/en/contact.html    /contact.html                         200
+/fr/contact.html    /contact.html                         200
+/es/contact.html    /contact.html                         200
+/de/contact.html    /contact.html                         200
+/tr/contact.html    /contact.html                         200
+/ja/contact.html    /contact.html                         200
+/ar/contact.html    /contact.html                         200
+/en/contact         /contact.html                         200
+/fr/contact         /contact.html                         200
+/es/contact         /contact.html                         200
+/de/contact         /contact.html                         200
+/tr/contact         /contact.html                         200
+/ja/contact         /contact.html                         200
+/ar/contact         /contact.html                         200
+
+# Reader SPA Fallbacks (Must be AFTER static pages)
 /chapter/*          /index.html                           200
 /chapters           /index.html                           200
 /en/*               /index.html                           200
@@ -9,4 +101,5 @@
 /de/*               /index.html                           200
 /tr/*               /index.html                           200
 /jp/*               /index.html                           200
+/ja/*               /index.html                           200
 /ar/*               /index.html                           200
