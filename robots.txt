@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /proxy-image
+Disallow: /chapter-images
+
+Sitemap: https://bluelockreader.com/sitemap.xml

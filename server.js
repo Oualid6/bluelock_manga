@@ -365,7 +365,7 @@ function translateHtml(html, langCode) {
 function getSiteUrl(req) {
   let proto = req.headers['x-forwarded-proto'] || (req.socket && req.socket.encrypted ? 'https' : 'http');
   if (proto.includes(',')) proto = proto.split(',')[0].trim();
-  const host = req.headers.host || 'localhost:8000';
+  const host = req.headers.host || 'bluelockreader.com';
   if (!host.includes('localhost') && !host.includes('127.0.0.1') && proto === 'http') {
     proto = 'https';
   }
