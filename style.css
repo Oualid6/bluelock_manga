@@ -457,13 +457,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   font-weight: 700;
   font-size: .95rem;
   border-radius: var(--radius-md);
-  box-shadow: 0 4px 20px rgba(253,216,53,.3);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.35);
   transition: var(--transition);
   letter-spacing: .2px;
 }
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(253,216,53,.45);
+  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.5);
 }
 .btn-primary svg { width: 18px; height: 18px; }
 .btn-secondary {
@@ -520,7 +520,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .cover-glow {
   position: absolute;
   inset: -20px;
-  background: radial-gradient(ellipse, rgba(253,216,53,.2) 0%, transparent 70%);
+  background: radial-gradient(ellipse, rgba(255, 255, 255, 0.25) 0%, transparent 70%);
   border-radius: 50%;
   filter: blur(20px);
   z-index: -1;
