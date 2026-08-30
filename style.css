@@ -610,8 +610,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   white-space: nowrap;
 }
 .see-all-btn:hover {
-  background: rgba(253,216,53,.1);
-  border-color: rgba(253,216,53,.4);
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
 }
 .arcs-grid {
   display: grid;
