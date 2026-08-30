@@ -126,11 +126,35 @@ function navigateTo(path, pushState = true) {
   handleRoute();
 }
 
+const STATIC_PAGES_MAP = {
+  '/privacy': '/privacy.html',
+  '/privacy.html': '/privacy.html',
+  '/terms': '/terms.html',
+  '/terms.html': '/terms.html',
+  '/dmca': '/dmca.html',
+  '/dmca.html': '/dmca.html',
+  '/disclaimer': '/disclaimer.html',
+  '/disclaimer.html': '/disclaimer.html',
+  '/contact': '/contact.html',
+  '/contact.html': '/contact.html'
+};
+
 document.addEventListener('click', (e) => {
   const anchor = e.target.closest('a[href]');
   if (!anchor) return;
   const href = anchor.getAttribute('href');
   if (!href) return;
+
+  const rawPath = href.split('?')[0].split('#')[0];
+  const cleanPath = rawPath.replace(/^\/(en|es|fr|de|tr|ja|ar)/i, '') || rawPath;
+
+  if (STATIC_PAGES_MAP[rawPath] || STATIC_PAGES_MAP[cleanPath]) {
+    e.preventDefault();
+    const targetUrl = STATIC_PAGES_MAP[rawPath] || STATIC_PAGES_MAP[cleanPath];
+    window.location.href = targetUrl;
+    return;
+  }
+
   const isSpaPath = href.startsWith('/') && !href.match(/\.[a-z]+$/i) && !href.startsWith('//');
   if (!isSpaPath) return;
   e.preventDefault();
@@ -145,6 +169,11 @@ function handleRoute() {
   if (parts.length > 0 && SUPPORTED_LANGS.includes(parts[0].toLowerCase())) {
     parts.shift();
     pathname = '/' + parts.join('/') || '/';
+  }
+
+  if (STATIC_PAGES_MAP[pathname]) {
+    window.location.href = STATIC_PAGES_MAP[pathname];
+    return;
   }
 
   if (pathname.startsWith('/chapter/')) {
