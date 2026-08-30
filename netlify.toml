@@ -1,0 +1,63 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/cover-image"
+  to = "/.netlify/functions/cover-image"
+  status = 200
+
+[[redirects]]
+  from = "/chapter-images"
+  to = "/.netlify/functions/chapter-images"
+  status = 200
+
+[[redirects]]
+  from = "/proxy-image"
+  to = "/.netlify/functions/proxy-image"
+  status = 200
+
+[[redirects]]
+  from = "/chapter/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/chapters"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/en/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/fr/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/es/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/de/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/tr/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/jp/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/ar/*"
+  to = "/index.html"
+  status = 200
