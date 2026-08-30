@@ -704,15 +704,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(253,216,53,.03), transparent);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), transparent);
   opacity: 0;
   transition: var(--transition);
 }
 .recent-card:hover {
   background: var(--bg-card-h);
-  border-color: rgba(253,216,53,.2);
+  border-color: rgba(255, 255, 255, 0.4);
   transform: translateY(-3px);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
 }
 .recent-card:hover::after { opacity: 1; }
 .recent-ch-num {
@@ -1658,14 +1658,14 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(253,216,53,.05) 0%, transparent 60%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, transparent 60%);
   opacity: 0;
   transition: opacity .2s;
 }
 .popular-card:hover {
-  border-color: rgba(253,216,53,.3);
+  border-color: rgba(255, 255, 255, 0.4);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0,0,0,.25);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.15);
 }
 .popular-card:hover::before { opacity: 1; }
 .popular-ch-num {
@@ -1743,8 +1743,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transition: var(--transition);
 }
 .suggested-card:hover {
-  border-color: rgba(126,211,33,.35);
+  border-color: rgba(255, 255, 255, 0.4);
   transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.12);
 }
 .suggested-label {
   font-size: 0.7rem;
