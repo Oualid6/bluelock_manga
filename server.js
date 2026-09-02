@@ -338,8 +338,8 @@ const LOCALE_MAP = { en: 'en_US', es: 'es_ES', fr: 'fr_FR', de: 'de_DE', tr: 'tr
 function t(key, langCode) {
   const raw = (TRANSLATIONS[langCode] && TRANSLATIONS[langCode][key]) ||
               (TRANSLATIONS['EN'] && TRANSLATIONS['EN'][key]) || key;
-  const latestNum = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST[CHAPTERS_LIST.length - 1].number : 358;
-  const totalCount = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST.length : 358;
+  const latestNum = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST[CHAPTERS_LIST.length - 1].number : 359;
+  const totalCount = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST.length : 359;
   let str = raw.replace(/\{count\}/g, totalCount);
   if (key !== 'seo_title_chapter' && key !== 'seo_desc_chapter') {
     str = str.replace(/\{ch\}/g, latestNum);
@@ -511,7 +511,7 @@ function serveIndexWithSeo(req, res, pageType, param = null, langCode = 'EN', la
       const chData = CHAPTERS_LIST.find(c => c.number === chNum);
       const chTitle = chData ? chData.title : `Chapter ${chNum}`;
       const prevNum = chNum > 1 ? chNum - 1 : null;
-      const maxCh   = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST[CHAPTERS_LIST.length - 1].number : 358;
+      const maxCh   = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST[CHAPTERS_LIST.length - 1].number : 359;
       const nextNum = chNum < maxCh ? chNum + 1 : null;
       const articleSchema = {
         "@type": "Article",
@@ -561,8 +561,8 @@ function serveIndexWithSeo(req, res, pageType, param = null, langCode = 'EN', la
     const htmlLang = langCode === 'JP' ? 'ja' : langCode.toLowerCase();
     const htmlDir  = langCode === 'AR' ? ' dir="rtl"' : '';
 
-    const latestNum = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST[CHAPTERS_LIST.length - 1].number : 358;
-    const totalCount = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST.length : 358;
+    const latestNum = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST[CHAPTERS_LIST.length - 1].number : 359;
+    const totalCount = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST.length : 359;
 
     let parsedHtml = html
       .replace(/<html([^>]*) lang="[^"]*"([^>]*)>/, `<html$1 lang="${htmlLang}"${htmlDir}$2>`)
@@ -590,7 +590,7 @@ function serveIndexWithSeo(req, res, pageType, param = null, langCode = 'EN', la
       const arc = ARCS.find(a => chNum >= a.start && chNum <= a.end);
       const arcName = arc ? getArcName(arc.id, langCode) : '';
       const prevNum = chNum > 1 ? chNum - 1 : null;
-      const maxCh = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST[CHAPTERS_LIST.length - 1].number : 358;
+      const maxCh = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST[CHAPTERS_LIST.length - 1].number : 359;
       const nextNum = chNum < maxCh ? chNum + 1 : null;
 
       const ssrChapterHtml = `

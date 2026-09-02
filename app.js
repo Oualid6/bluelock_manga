@@ -43,7 +43,7 @@ const ARCS = [
   {
     id: 5,
     name: "Neo Egoist League Arc",
-    range: "Chapters 152 – 358+",
+    range: "Chapters 152 – 359+",
     start: 152,
     end: 9999,
     desc: "Blue Lock players train alongside Europe's top five football leagues under world-class superstars to compete for massive pro contract bids.",
@@ -338,7 +338,7 @@ function renderPopularChapters() {
   if (!grid) return;
   grid.innerHTML = '';
 
-  const latestCh = CHAPTERS.length > 0 ? CHAPTERS[CHAPTERS.length - 1] : { number: 358, title: 'Chapter 358' };
+  const latestCh = CHAPTERS.length > 0 ? CHAPTERS[CHAPTERS.length - 1] : { number: 359, title: 'Chapter 359' };
   const popular = [
     { number: 1,   label: 'Chapter 1',   desc: 'First Selection begins — Isagi Yoichi enters Blue Lock' },
     { number: 39,  label: 'Chapter 39',  desc: 'Second Selection Arc — 3v3 rivalries begin' },
@@ -812,7 +812,7 @@ const TRANSLATIONS = {
     nav_chapters: "Chapters",
     nav_about: "About",
     search_placeholder: "Search chapters…",
-    hero_ongoing: "Ongoing · Chapter 358",
+    hero_ongoing: "Ongoing · Chapter 359",
     hero_by: "by",
     hero_desc: "Following Japan's disappointing exit at the 2018 World Cup, the Japanese Football Union initiates a revolutionary experiment: Blue Lock. 300 elite high school strikers are locked in a battle royale to forge Japan's ultimate egotistical striker.",
     btn_start_reading: "Start Reading",
@@ -839,7 +839,7 @@ const TRANSLATIONS = {
     about_genre: "Genre",
     about_genre_val: "Sports, Action, Drama",
     cl_title: "All Chapters",
-    cl_subtitle: "358 chapters available · Ongoing",
+    cl_subtitle: "359 chapters available · Ongoing",
     cl_search_placeholder: "Search chapter number or title…",
     sort_newest: "Newest First",
     sort_oldest: "Oldest First",
@@ -915,7 +915,7 @@ const TRANSLATIONS = {
     nav_chapters: "Chapitres",
     nav_about: "À propos",
     search_placeholder: "Rechercher des chapitres…",
-    hero_ongoing: "En cours · Chapitre 358",
+    hero_ongoing: "En cours · Chapitre 359",
     hero_by: "par",
     hero_desc: "Après l'élimination du Japon lors de la Coupe du Monde 2018, l'Union Japonaise de Football lance un projet révolutionnaire : le Blue Lock. 300 attaquants lycéens s'affrontent pour devenir le meilleur buteur égoïste du monde.",
     btn_start_reading: "Commencer la lecture",
@@ -942,7 +942,7 @@ const TRANSLATIONS = {
     about_genre: "Genre",
     about_genre_val: "Sports, Action, Drame",
     cl_title: "Tous les Chapitres",
-    cl_subtitle: "358 chapitres disponibles · En cours",
+    cl_subtitle: "359 chapitres disponibles · En cours",
     cl_search_placeholder: "Numéro ou titre du chapitre…",
     sort_newest: "Plus récents",
     sort_oldest: "Plus anciens",
@@ -1018,7 +1018,7 @@ const TRANSLATIONS = {
     nav_chapters: "Capítulos",
     nav_about: "Acerca de",
     search_placeholder: "Buscar capítulos…",
-    hero_ongoing: "En emisión · Capítulo 358",
+    hero_ongoing: "En emisión · Capítulo 359",
     hero_by: "por",
     hero_desc: "Tras la eliminación de Japón en el Mundial 2018, la Unión Japonesa de Fútbol inicia un experimento revolucionario: Blue Lock. 300 delanteros juveniles compiten para forjar al mejor delantero egoísta del mundo.",
     btn_start_reading: "Empezar a leer",
@@ -1045,7 +1045,7 @@ const TRANSLATIONS = {
     about_genre: "Género",
     about_genre_val: "Deportes, Acción, Drama",
     cl_title: "Todos los Capítulos",
-    cl_subtitle: "358 capítulos disponibles · En emisión",
+    cl_subtitle: "359 capítulos disponibles · En emisión",
     cl_search_placeholder: "Buscar por número o título…",
     sort_newest: "Más recientes",
     sort_oldest: "Más antiguos",
@@ -1121,7 +1121,7 @@ const TRANSLATIONS = {
     nav_chapters: "Kapitel",
     nav_about: "Über uns",
     search_placeholder: "Kapitel suchen…",
-    hero_ongoing: "Laufend · Kapitel 358",
+    hero_ongoing: "Laufend · Kapitel 359",
     hero_by: "von",
     hero_desc: "Nach Japans enttäuschendem Ausscheiden bei der WM 2018 startet der japanische Fußballverband das Experiment Blue Lock: 300 Oberschul-Stürmer kämpfen um den Titel des ultimativen egoistischen Stürmers.",
     btn_start_reading: "Jetzt lesen",
@@ -1148,7 +1148,7 @@ const TRANSLATIONS = {
     about_genre: "Genre",
     about_genre_val: "Sport, Action, Drama",
     cl_title: "Alle Kapitel",
-    cl_subtitle: "358 Kapitel verfügbar · Laufend",
+    cl_subtitle: "359 Kapitel verfügbar · Laufend",
     cl_search_placeholder: "Kapitelnummer oder Titel suchen…",
     sort_newest: "Neueste zuerst",
     sort_oldest: "Älteste zuerst",
@@ -1224,7 +1224,7 @@ const TRANSLATIONS = {
     nav_chapters: "Bölümler",
     nav_about: "Hakkında",
     search_placeholder: "Bölüm ara…",
-    hero_ongoing: "Devam Ediyor · Bölüm 358",
+    hero_ongoing: "Devam Ediyor · Bölüm 359",
     hero_by: "yazan",
     hero_desc: "Japonya'nın 2018 Dünya Kupası'ndaki başarısızlığının ardından Japonya Futbol Federasyonu radikal bir proje başlatır: Blue Lock. 300 genç forvet, dünyanın en egoist golcüsü olmak için yarışır.",
     btn_start_reading: "Okumaya Başla",
@@ -1251,7 +1251,7 @@ const TRANSLATIONS = {
     about_genre: "Tür",
     about_genre_val: "Spor, Aksiyon, Dram",
     cl_title: "Tüm Bölümler",
-    cl_subtitle: "358 bölüm mevcut · Devam ediyor",
+    cl_subtitle: "359 bölüm mevcut · Devam ediyor",
     cl_search_placeholder: "Bölüm numarası veya başlık ara…",
     sort_newest: "En Yeniler",
     sort_oldest: "En Eskiler",
@@ -1327,7 +1327,7 @@ const TRANSLATIONS = {
     nav_chapters: "全話一覧",
     nav_about: "作品概要",
     search_placeholder: "エピソード検索…",
-    hero_ongoing: "連載中 · 第 358 話",
+    hero_ongoing: "連載中 · 第 359 話",
     hero_by: "原作・漫画",
     hero_desc: "2018年W杯での敗退を受け、日本フットボール連合はW杯優勝のために「ブルーロック（青い監獄）」プロジェクトを立ち上げる。300人の高校生FWが世界一のエゴイストストライカーを目指す。",
     btn_start_reading: "第1話から読む",
@@ -1354,7 +1354,7 @@ const TRANSLATIONS = {
     about_genre: "ジャンル",
     about_genre_val: "スポーツ、アクション、ドラマ",
     cl_title: "全話一覧",
-    cl_subtitle: "358話公開中 · 連載中",
+    cl_subtitle: "359話公開中 · 連載中",
     cl_search_placeholder: "話数やタイトルで検索…",
     sort_newest: "新しい順",
     sort_oldest: "古い順",
@@ -1430,7 +1430,7 @@ const TRANSLATIONS = {
     nav_chapters: "الفصول",
     nav_about: "حول المانجا",
     search_placeholder: "بحث عن فصل…",
-    hero_ongoing: "مستمرة · الفصل 358",
+    hero_ongoing: "مستمرة · الفصل 359",
     hero_by: "تأليف",
     hero_desc: "بعد الخروج المخيب لليابان من كأس العالم 2018، يبدأ اتحاد كرة القدم الياباني مشروع 'بلولوك'. 300 مهاجم شاب يتنافسون في معركة ليصبح أحدهم الهداف الأنانية الأول في العالم.",
     btn_start_reading: "ابدأ القراءة",
@@ -1457,7 +1457,7 @@ const TRANSLATIONS = {
     about_genre: "التصنيف",
     about_genre_val: "رياضة، أكشن، دراما",
     cl_title: "جميع الفصول",
-    cl_subtitle: "358 فصل متوفر · مستمرة",
+    cl_subtitle: "359 فصل متوفر · مستمرة",
     cl_search_placeholder: "ابحث برقم الفصل أو العنوان…",
     sort_newest: "الأحدث أولاً",
     sort_oldest: "الأقدم أولاً",
@@ -1587,8 +1587,8 @@ function t(key) {
   const dict = TRANSLATIONS[lang] || TRANSLATIONS['EN'];
   const raw  = dict[key] !== undefined ? dict[key] : (TRANSLATIONS['EN'][key] || key);
   
-  const latestNum = CHAPTERS.length > 0 ? CHAPTERS[CHAPTERS.length - 1].number : 358;
-  const totalCount = CHAPTERS.length > 0 ? CHAPTERS.length : 358;
+  const latestNum = CHAPTERS.length > 0 ? CHAPTERS[CHAPTERS.length - 1].number : 359;
+  const totalCount = CHAPTERS.length > 0 ? CHAPTERS.length : 359;
   let str = raw.replace(/\{count\}/g, totalCount);
   if (key !== 'seo_title_chapter' && key !== 'seo_desc_chapter') {
     str = str.replace(/\{ch\}/g, latestNum);
