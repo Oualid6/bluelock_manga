@@ -5243,6 +5243,20 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://bluelockreader.com/chapter/360</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bluelockreader.com/en/chapter/360" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://bluelockreader.com/es/chapter/360" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://bluelockreader.com/fr/chapter/360" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://bluelockreader.com/de/chapter/360" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bluelockreader.com/tr/chapter/360" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://bluelockreader.com/ja/chapter/360" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://bluelockreader.com/ar/chapter/360" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bluelockreader.com/en/chapter/360" />
+    <lastmod>2026-09-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://bluelockreader.com/privacy.html</loc>
     <lastmod>2026-09-02</lastmod>
     <changefreq>yearly</changefreq>
