@@ -375,10 +375,11 @@ function renderRecentChapters() {
       navigateTo(`/chapter/${ch.number}`);
     };
 
+    const isSoon = ch.status === 'coming-soon';
     card.innerHTML = `
       <div class="recent-ch-num">${formatChapterNumber(ch.number)}</div>
-      <div class="recent-ch-title">${ch.title}</div>
-      <div class="recent-ch-date">${t('latest_release')}</div>
+      <div class="recent-ch-title">${ch.title} ${isSoon ? '<span class="badge-soon-table">Soon</span>' : ''}</div>
+      <div class="recent-ch-date">${isSoon ? '<span style="color:var(--gold)">Coming Soon</span>' : t('latest_release')}</div>
       <div class="recent-read-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
       </div>
@@ -429,12 +430,14 @@ function renderChapterTable() {
     tr.className = 'cl-row';
     tr.onclick = () => navigateTo(`/chapter/${ch.number}`);
     
+    const isSoon = ch.status === 'coming-soon';
     tr.innerHTML = `
       <td class="td-num">${formatChapterNumber(ch.number)}</td>
       <td class="td-title">
         <span class="ch-title-text">${ch.title}</span>
+        ${isSoon ? `<span class="badge-soon-table">Coming Soon</span>` : ''}
       </td>
-      <td class="td-date hide-mobile">${t('released_label')}</td>
+      <td class="td-date hide-mobile">${isSoon ? 'Coming Soon' : t('released_label')}</td>
       <td class="td-action">
         <button class="ch-read-btn" aria-label="Read Chapter ${ch.number}">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
@@ -480,9 +483,12 @@ function readChapter(chNum, updateHash = true) {
   const titleText = chData ? `${formatChapterNumber(chNum)} — ${chData.title}` : `${t('chapter_word')} ${chNum}`;
   readerTitle.textContent = titleText;
   
-  const newTitle = chData
-    ? `Read Blue Lock Chapter ${chNum}: ${chData.title} Online Free | Blue Lock Reader`
-    : `Blue Lock Chapter ${chNum} | Blue Lock Reader`;
+  const isSoon = chData && chData.status === 'coming-soon';
+  const newTitle = isSoon
+    ? `Blue Lock Chapter ${chNum} - Manga Online | Blue Lock Reader`
+    : (chData
+        ? `Read Blue Lock Chapter ${chNum}: ${chData.title} Online Free | Blue Lock Reader`
+        : `Blue Lock Chapter ${chNum} | Blue Lock Reader`);
   document.title = newTitle;
   trackPageView(`/chapter/${chNum}`, newTitle);
 
@@ -501,7 +507,7 @@ function readChapter(chNum, updateHash = true) {
   readerChapterInfo.innerHTML = `
     <h2>${titleText}</h2>
     ${arc ? `<p class="reader-arc-label" style="color: ${arc.color}">${arcName}</p>` : ''}
-    <p class="reader-intro-text">${t('read_chapter_prefix')} <strong>${titleText}</strong>.${arc ? ' ' + t('read_arc_prefix') + ' <strong>' + arcName + '</strong>.' : ''} ${t('read_nav_hint')}</p>
+    <p class="reader-intro-text">${isSoon ? `Blue Lock Chapter ${chNum} is coming soon.` : `${t('read_chapter_prefix')} <strong>${titleText}</strong>.${arc ? ' ' + t('read_arc_prefix') + ' <strong>' + arcName + '</strong>.' : ''} ${t('read_nav_hint')}`}</p>
   `;
 
   const bcCurrent = document.getElementById('reader-breadcrumb-current');
@@ -513,6 +519,40 @@ function readChapter(chNum, updateHash = true) {
   readerPages.innerHTML = '';
   const suggestedSection = document.getElementById('suggested-section');
   if (suggestedSection) suggestedSection.innerHTML = '';
+
+  if (isSoon) {
+    readerPages.innerHTML = `
+      <div class="coming-soon-container animate-in">
+        <div class="coming-soon-card">
+          <div class="coming-soon-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h1 class="coming-soon-title">Blue Lock Chapter ${chNum}</h1>
+          <div class="coming-soon-badge-tag">Chapter ${chNum} — Coming Soon</div>
+          <p class="coming-soon-desc">
+            Blue Lock Chapter ${chNum} is not available yet. Join our Telegram group to get notified as soon as Chapter ${chNum} is released.
+          </p>
+          <a href="https://t.me/ManganexChannel" target="_blank" rel="noopener noreferrer" class="btn-telegram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.67-.52.36-.99.53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.37-.49 1.02-.75 4.01-1.74 6.69-2.89 8.04-3.45 3.83-1.6 4.62-1.88 5.14-1.89.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.16-.04.25z"/>
+            </svg>
+            <span>Join Telegram Group</span>
+          </a>
+          <div class="coming-soon-nav">
+            <button class="btn-secondary" onclick="readChapter(${chNum - 1})" aria-label="Go to Chapter ${chNum - 1}">
+              ← Chapter ${chNum - 1}
+            </button>
+          </div>
+        </div>
+      </div>
+    `;
+    renderSuggestedChapters(chNum);
+    return;
+  }
+
   loadChapterPages(chNum);
 }
 
@@ -817,6 +857,8 @@ const TRANSLATIONS = {
     hero_desc: "Following Japan's disappointing exit at the 2018 World Cup, the Japanese Football Union initiates a revolutionary experiment: Blue Lock. 300 elite high school strikers are locked in a battle royale to forge Japan's ultimate egotistical striker.",
     btn_start_reading: "Start Reading",
     btn_latest_chapter: "Latest Chapter",
+    btn_ch361: "Chapter 361 →",
+    badge_soon: "SOON",
     stats_chapters: "Chapters",
     stats_since: "Since",
     stats_rating: "Rating",
@@ -1660,16 +1702,24 @@ function updateClientSeo() {
   } else if (currentState.currentView === 'reader') {
     const chNum = currentState.currentChapter;
     const chData = CHAPTERS.find(c => c.number === chNum);
-    const chTitle = chData ? chData.title : `Chapter ${chNum}`;
-    const arc = ARCS.find(a => chNum >= a.start && chNum <= a.end);
-    const arcTrans = arc && ARC_TRANSLATIONS[lang] ? ARC_TRANSLATIONS[lang][arc.id] : null;
-    const arcName = arcTrans ? arcTrans.name : (arc ? arc.name : '');
 
-    const title = t('seo_title_chapter').replace('{ch}', chNum).replace('{title}', chTitle).replace('{arc}', arcName);
-    const desc  = t('seo_desc_chapter').replace('{ch}', chNum).replace('{title}', chTitle).replace('{arc}', arcName);
+    if (chData && chData.status === 'coming-soon') {
+      const title = `Blue Lock Chapter ${chNum} - Manga Online | Blue Lock Reader`;
+      const desc  = `Read Blue Lock Chapter ${chNum} online. Chapter ${chNum} is coming soon. Join our Telegram group to get notified when the new chapter is released.`;
+      document.title = title;
+      setMeta('description', desc);
+    } else {
+      const chTitle = chData ? chData.title : `Chapter ${chNum}`;
+      const arc = ARCS.find(a => chNum >= a.start && chNum <= a.end);
+      const arcTrans = arc && ARC_TRANSLATIONS[lang] ? ARC_TRANSLATIONS[lang][arc.id] : null;
+      const arcName = arcTrans ? arcTrans.name : (arc ? arc.name : '');
 
-    document.title = title;
-    setMeta('description', desc);
+      const title = t('seo_title_chapter').replace('{ch}', chNum).replace('{title}', chTitle).replace('{arc}', arcName);
+      const desc  = t('seo_desc_chapter').replace('{ch}', chNum).replace('{title}', chTitle).replace('{arc}', arcName);
+
+      document.title = title;
+      setMeta('description', desc);
+    }
   }
 }
 
@@ -1690,10 +1740,13 @@ function setMeta(name, content) {
 }
 
 function readLatestChapter() {
-  if (CHAPTERS.length > 0) {
+  const available = CHAPTERS.filter(c => c.status !== 'coming-soon');
+  if (available.length > 0) {
+    readChapter(available[available.length - 1].number);
+  } else if (CHAPTERS.length > 0) {
     readChapter(CHAPTERS[CHAPTERS.length - 1].number);
   } else {
-    readChapter(358);
+    readChapter(360);
   }
 }
 

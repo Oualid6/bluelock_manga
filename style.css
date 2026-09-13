@@ -1775,4 +1775,142 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .legal-link-list { color: var(--text-2); line-height: 2; }
 .author-portrait { border-radius: 8px; max-width: 160px; }
 
+/* ── Hero Chapter 361 Button & Badges ── */
+.btn-ch361 {
+  border-color: rgba(56, 189, 248, 0.4);
+  background: rgba(56, 189, 248, 0.08);
+}
+.btn-ch361:hover {
+  background: rgba(56, 189, 248, 0.16);
+  border-color: var(--gold);
+}
+.badge-coming-soon {
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(56, 189, 248, 0.18);
+  color: var(--gold-light);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  margin-left: 2px;
+}
+
+/* ── Coming Soon Chapter Reader View ── */
+.coming-soon-container {
+  max-width: 760px;
+  margin: 32px auto 48px;
+  padding: 0 20px;
+}
+.coming-soon-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-h);
+  border-radius: var(--radius-lg);
+  padding: 48px 32px;
+  text-align: center;
+  box-shadow: var(--shadow-lg), var(--shadow-gold);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.coming-soon-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--teal), var(--gold));
+}
+.coming-soon-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid var(--border-h);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+}
+.coming-soon-title {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 800;
+  color: var(--text);
+  margin: 0;
+  line-height: 1.2;
+}
+.coming-soon-badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  color: var(--gold-light);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+.coming-soon-desc {
+  color: var(--text-2);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 580px;
+  margin: 0;
+}
+.btn-telegram {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 32px;
+  background: linear-gradient(135deg, #0088cc, #006699);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 20px rgba(0, 136, 204, 0.4);
+  transition: var(--transition);
+  text-decoration: none;
+  margin-top: 8px;
+}
+.btn-telegram:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 136, 204, 0.6);
+  background: linear-gradient(135deg, #0099e6, #0077b3);
+  color: #ffffff;
+}
+.btn-telegram svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+.coming-soon-nav {
+  margin-top: 16px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.badge-soon-table {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(56, 189, 248, 0.15);
+  color: var(--gold-light);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  margin-left: 8px;
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
 

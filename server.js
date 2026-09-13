@@ -440,12 +440,18 @@ function serveIndexWithSeo(req, res, pageType, param = null, langCode = 'EN', la
     } else if (pageType === 'chapter') {
       const chNum  = parseInt(param);
       const chData = CHAPTERS_LIST.find(c => c.number === chNum);
-      const chTitle = chData ? chData.title : `Chapter ${chNum}`;
-      const arc = ARCS.find(a => chNum >= a.start && chNum <= a.end);
-      const arcName = arc ? getArcName(arc.id, langCode) : '';
+      const isSoon = chData && chData.status === 'coming-soon';
       pagePath = `/${langPrefix}/chapter/${chNum}`;
-      title = t('seo_title_chapter', langCode).replace('{ch}', chNum).replace('{title}', chTitle).replace('{arc}', arcName);
-      desc  = t('seo_desc_chapter', langCode).replace('{ch}', chNum).replace('{title}', chTitle).replace('{arc}', arcName);
+      if (isSoon) {
+        title = `Blue Lock Chapter ${chNum} - Manga Online | Blue Lock Reader`;
+        desc  = `Read Blue Lock Chapter ${chNum} online. Chapter ${chNum} is coming soon. Join our Telegram group to get notified when the new chapter is released.`;
+      } else {
+        const chTitle = chData ? chData.title : `Chapter ${chNum}`;
+        const arc = ARCS.find(a => chNum >= a.start && chNum <= a.end);
+        const arcName = arc ? getArcName(arc.id, langCode) : '';
+        title = t('seo_title_chapter', langCode).replace('{ch}', chNum).replace('{title}', chTitle).replace('{arc}', arcName);
+        desc  = t('seo_desc_chapter', langCode).replace('{ch}', chNum).replace('{title}', chTitle).replace('{arc}', arcName);
+      }
     }
 
     const pageUrl = `${siteUrl}${pagePath}`;
@@ -586,6 +592,7 @@ function serveIndexWithSeo(req, res, pageType, param = null, langCode = 'EN', la
     if (pageType === 'chapter') {
       const chNum = parseInt(param);
       const chData = CHAPTERS_LIST.find(c => c.number === chNum);
+      const isSoon = chData && chData.status === 'coming-soon';
       const chTitle = chData ? chData.title : `Chapter ${chNum}`;
       const arc = ARCS.find(a => chNum >= a.start && chNum <= a.end);
       const arcName = arc ? getArcName(arc.id, langCode) : '';
@@ -593,7 +600,29 @@ function serveIndexWithSeo(req, res, pageType, param = null, langCode = 'EN', la
       const maxCh = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST[CHAPTERS_LIST.length - 1].number : 360;
       const nextNum = chNum < maxCh ? chNum + 1 : null;
 
-      const ssrChapterHtml = `
+      let ssrChapterHtml = '';
+      if (isSoon) {
+        ssrChapterHtml = `
+      <article class="ssr-chapter-container" style="max-width:800px;margin:2rem auto;padding:2rem;background:rgba(10,17,40,0.9);border-radius:16px;color:#f4f4f5;border:1px solid #1e293b;text-align:center;">
+        <header style="margin-bottom:1.5rem;">
+          <h1 style="font-size:2.2rem;font-weight:800;color:#ffffff;margin-bottom:0.5rem;">Blue Lock Chapter ${chNum}</h1>
+          <span style="display:inline-block;padding:0.3rem 1rem;background:rgba(56,189,248,0.15);border-radius:9999px;font-size:0.85rem;color:#38bdf8;font-weight:700;text-transform:uppercase;border:1px solid rgba(56,189,248,0.3);">Chapter ${chNum} — Coming Soon</span>
+        </header>
+        <p style="font-size:1.1rem;line-height:1.7;color:#cbd5e1;margin-bottom:2rem;max-width:600px;margin-left:auto;margin-right:auto;">
+          Blue Lock Chapter ${chNum} is not available yet. Join our Telegram group to get notified as soon as Chapter ${chNum} is released.
+        </p>
+        <div style="margin-bottom:2rem;">
+          <a href="https://t.me/ManganexChannel" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:10px;padding:0.9rem 2rem;background:linear-gradient(135deg, #0088cc, #006699);color:#fff;border-radius:10px;text-decoration:none;font-weight:700;font-size:1rem;box-shadow:0 4px 20px rgba(0,136,204,0.4);">
+            Join Telegram Group
+          </a>
+        </div>
+        <div style="display:flex;gap:1rem;justify-content:center;align-items:center;margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid #1e293b;">
+          ${prevNum ? `<a href="/${langPrefix}/chapter/${prevNum}" style="padding:0.6rem 1.2rem;background:#1e293b;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">‹ ${t('breadcrumb_chapter_prefix', langCode)} ${prevNum}</a>` : ''}
+          <a href="/${langPrefix}/chapters" style="padding:0.6rem 1.2rem;background:#0066ff;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">${t('breadcrumb_chapters', langCode)}</a>
+        </div>
+      </article>`;
+      } else {
+        ssrChapterHtml = `
       <article class="ssr-chapter-container" style="max-width:900px;margin:2rem auto;padding:1.5rem;background:rgba(10,17,40,0.9);border-radius:12px;color:#f4f4f5;border:1px solid #1e293b;">
         <header style="margin-bottom:1.5rem;">
           <h1 style="font-size:2rem;font-weight:800;color:#ffffff;margin-bottom:0.5rem;">Blue Lock Chapter ${chNum}: ${chTitle}</h1>
@@ -608,6 +637,7 @@ function serveIndexWithSeo(req, res, pageType, param = null, langCode = 'EN', la
           ${nextNum ? `<a href="/${langPrefix}/chapter/${nextNum}" style="padding:0.6rem 1.2rem;background:#1e293b;color:#fff;border-radius:8px;text-decoration:none;font-weight:600;">${t('breadcrumb_chapter_prefix', langCode)} ${nextNum} ›</a>` : ''}
         </div>
       </article>`;
+      }
 
       parsedHtml = parsedHtml
         .replace('<main id="home-view">', '<main id="home-view" class="hidden">')
