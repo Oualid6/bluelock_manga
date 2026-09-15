@@ -442,9 +442,12 @@ function serveIndexWithSeo(req, res, pageType, param = null, langCode = 'EN', la
       const chData = CHAPTERS_LIST.find(c => c.number === chNum);
       const isSoon = chData && chData.status === 'coming-soon';
       pagePath = `/${langPrefix}/chapter/${chNum}`;
-      if (isSoon) {
+      if (chNum === 361) {
+        title = `Blue Lock Chapter 361 - Manga Online | Blue Lock Reader`;
+        desc  = `Read Blue Lock Chapter 361 online. Continue reading the latest Blue Lock manga chapter on Blue Lock Reader.`;
+      } else if (isSoon) {
         title = `Blue Lock Chapter ${chNum} - Manga Online | Blue Lock Reader`;
-        desc  = `Read Blue Lock Chapter ${chNum} online. Chapter ${chNum} is coming soon. Join our Telegram group to get notified when the new chapter is released.`;
+        desc  = `Blue Lock Chapter ${chNum} is coming soon. Join our Telegram group to get notified when the new chapter is released.`;
       } else {
         const chTitle = chData ? chData.title : `Chapter ${chNum}`;
         const arc = ARCS.find(a => chNum >= a.start && chNum <= a.end);
@@ -609,7 +612,7 @@ function serveIndexWithSeo(req, res, pageType, param = null, langCode = 'EN', la
           <span style="display:inline-block;padding:0.3rem 1rem;background:rgba(56,189,248,0.15);border-radius:9999px;font-size:0.85rem;color:#38bdf8;font-weight:700;text-transform:uppercase;border:1px solid rgba(56,189,248,0.3);">Chapter ${chNum} — Coming Soon</span>
         </header>
         <p style="font-size:1.1rem;line-height:1.7;color:#cbd5e1;margin-bottom:2rem;max-width:600px;margin-left:auto;margin-right:auto;">
-          Blue Lock Chapter ${chNum} is not available yet. Join our Telegram group to get notified as soon as Chapter ${chNum} is released.
+          Blue Lock Chapter ${chNum} is not available yet. Join our Telegram group to get notified when Chapter ${chNum} is released.
         </p>
         <div style="margin-bottom:2rem;">
           <a href="https://t.me/ManganexChannel" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:10px;padding:0.9rem 2rem;background:linear-gradient(135deg, #0088cc, #006699);color:#fff;border-radius:10px;text-decoration:none;font-weight:700;font-size:1rem;box-shadow:0 4px 20px rgba(0,136,204,0.4);">

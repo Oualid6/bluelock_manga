@@ -484,7 +484,7 @@ function readChapter(chNum, updateHash = true) {
   readerTitle.textContent = titleText;
   
   const isSoon = chData && chData.status === 'coming-soon';
-  const newTitle = isSoon
+  const newTitle = (chNum === 361 || isSoon)
     ? `Blue Lock Chapter ${chNum} - Manga Online | Blue Lock Reader`
     : (chData
         ? `Read Blue Lock Chapter ${chNum}: ${chData.title} Online Free | Blue Lock Reader`
@@ -533,7 +533,7 @@ function readChapter(chNum, updateHash = true) {
           <h1 class="coming-soon-title">Blue Lock Chapter ${chNum}</h1>
           <div class="coming-soon-badge-tag">Chapter ${chNum} — Coming Soon</div>
           <p class="coming-soon-desc">
-            Blue Lock Chapter ${chNum} is not available yet. Join our Telegram group to get notified as soon as Chapter ${chNum} is released.
+            Blue Lock Chapter ${chNum} is not available yet. Join our Telegram group to get notified when Chapter ${chNum} is released.
           </p>
           <a href="https://t.me/ManganexChannel" target="_blank" rel="noopener noreferrer" class="btn-telegram">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -852,12 +852,13 @@ const TRANSLATIONS = {
     nav_chapters: "Chapters",
     nav_about: "About",
     search_placeholder: "Search chapters…",
-    hero_ongoing: "Ongoing · Chapter 360",
+    hero_ongoing: "Ongoing · Chapter 361",
     hero_by: "by",
     hero_desc: "Following Japan's disappointing exit at the 2018 World Cup, the Japanese Football Union initiates a revolutionary experiment: Blue Lock. 300 elite high school strikers are locked in a battle royale to forge Japan's ultimate egotistical striker.",
     btn_start_reading: "Start Reading",
     btn_latest_chapter: "Latest Chapter",
     btn_ch361: "Chapter 361 →",
+    btn_ch362: "Chapter 362 →",
     badge_soon: "SOON",
     stats_chapters: "Chapters",
     stats_since: "Since",
@@ -957,11 +958,13 @@ const TRANSLATIONS = {
     nav_chapters: "Chapitres",
     nav_about: "À propos",
     search_placeholder: "Rechercher des chapitres…",
-    hero_ongoing: "En cours · Chapitre 360",
+    hero_ongoing: "En cours · Chapitre 361",
     hero_by: "par",
     hero_desc: "Après l'élimination du Japon lors de la Coupe du Monde 2018, l'Union Japonaise de Football lance un projet révolutionnaire : le Blue Lock. 300 attaquants lycéens s'affrontent pour devenir le meilleur buteur égoïste du monde.",
     btn_start_reading: "Commencer la lecture",
     btn_latest_chapter: "Dernier chapitre",
+    btn_ch361: "Chapitre 361 →",
+    btn_ch362: "Chapitre 362 →",
     stats_chapters: "Chapitres",
     stats_since: "Depuis",
     stats_rating: "Note",
@@ -1060,11 +1063,13 @@ const TRANSLATIONS = {
     nav_chapters: "Capítulos",
     nav_about: "Acerca de",
     search_placeholder: "Buscar capítulos…",
-    hero_ongoing: "En emisión · Capítulo 360",
+    hero_ongoing: "En emisión · Capítulo 361",
     hero_by: "por",
     hero_desc: "Tras la eliminación de Japón en el Mundial 2018, la Unión Japonesa de Fútbol inicia un experimento revolucionario: Blue Lock. 300 delanteros juveniles compiten para forjar al mejor delantero egoísta del mundo.",
     btn_start_reading: "Empezar a leer",
     btn_latest_chapter: "Último capítulo",
+    btn_ch361: "Capítulo 361 →",
+    btn_ch362: "Capítulo 362 →",
     stats_chapters: "Capítulos",
     stats_since: "Desde",
     stats_rating: "Calificación",
@@ -1163,11 +1168,13 @@ const TRANSLATIONS = {
     nav_chapters: "Kapitel",
     nav_about: "Über uns",
     search_placeholder: "Kapitel suchen…",
-    hero_ongoing: "Laufend · Kapitel 360",
+    hero_ongoing: "Laufend · Kapitel 361",
     hero_by: "von",
     hero_desc: "Nach Japans enttäuschendem Ausscheiden bei der WM 2018 startet der japanische Fußballverband das Experiment Blue Lock: 300 Oberschul-Stürmer kämpfen um den Titel des ultimativen egoistischen Stürmers.",
     btn_start_reading: "Jetzt lesen",
     btn_latest_chapter: "Neuestes Kapitel",
+    btn_ch361: "Kapitel 361 →",
+    btn_ch362: "Kapitel 362 →",
     stats_chapters: "Kapitel",
     stats_since: "Seit",
     stats_rating: "Bewertung",
@@ -1266,11 +1273,13 @@ const TRANSLATIONS = {
     nav_chapters: "Bölümler",
     nav_about: "Hakkında",
     search_placeholder: "Bölüm ara…",
-    hero_ongoing: "Devam Ediyor · Bölüm 360",
+    hero_ongoing: "Devam Ediyor · Bölüm 361",
     hero_by: "yazan",
     hero_desc: "Japonya'nın 2018 Dünya Kupası'ndaki başarısızlığının ardından Japonya Futbol Federasyonu radikal bir proje başlatır: Blue Lock. 300 genç forvet, dünyanın en egoist golcüsü olmak için yarışır.",
     btn_start_reading: "Okumaya Başla",
     btn_latest_chapter: "En Son Bölüm",
+    btn_ch361: "Bölüm 361 →",
+    btn_ch362: "Bölüm 362 →",
     stats_chapters: "Bölüm",
     stats_since: "Çıkış",
     stats_rating: "Puan",
@@ -1369,11 +1378,13 @@ const TRANSLATIONS = {
     nav_chapters: "全話一覧",
     nav_about: "作品概要",
     search_placeholder: "エピソード検索…",
-    hero_ongoing: "連載中 · 第 360 話",
+    hero_ongoing: "連載中 · 第 361 話",
     hero_by: "原作・漫画",
     hero_desc: "2018年W杯での敗退を受け、日本フットボール連合はW杯優勝のために「ブルーロック（青い監獄）」プロジェクトを立ち上げる。300人の高校生FWが世界一のエゴイストストライカーを目指す。",
     btn_start_reading: "第1話から読む",
     btn_latest_chapter: "最新話を読む",
+    btn_ch361: "第 361 話 →",
+    btn_ch362: "第 362 話 →",
     stats_chapters: "話数",
     stats_since: "連載開始",
     stats_rating: "評価",
@@ -1472,11 +1483,13 @@ const TRANSLATIONS = {
     nav_chapters: "الفصول",
     nav_about: "حول المانجا",
     search_placeholder: "بحث عن فصل…",
-    hero_ongoing: "مستمرة · الفصل 360",
+    hero_ongoing: "مستمرة · الفصل 361",
     hero_by: "تأليف",
     hero_desc: "بعد الخروج المخيب لليابان من كأس العالم 2018، يبدأ اتحاد كرة القدم الياباني مشروع 'بلولوك'. 300 مهاجم شاب يتنافسون في معركة ليصبح أحدهم الهداف الأنانية الأول في العالم.",
     btn_start_reading: "ابدأ القراءة",
     btn_latest_chapter: "الفصل الأخير",
+    btn_ch361: "الفصل 361 →",
+    btn_ch362: "الفصل 362 →",
     stats_chapters: "فصل",
     stats_since: "منذ",
     stats_rating: "التقييم",
@@ -1677,8 +1690,9 @@ function translateUI() {
 }
 
 function updateDynamicUi() {
-  const latestNum = CHAPTERS.length > 0 ? CHAPTERS[CHAPTERS.length - 1].number : 358;
-  const totalCount = CHAPTERS.length > 0 ? CHAPTERS.length : 358;
+  const availableChapters = CHAPTERS.filter(c => c.status !== 'coming-soon');
+  const latestNum = availableChapters.length > 0 ? availableChapters[availableChapters.length - 1].number : 361;
+  const totalCount = CHAPTERS.length;
 
   const countEl = document.getElementById('stat-chapters-count');
   if (countEl) countEl.textContent = totalCount;
@@ -1703,9 +1717,12 @@ function updateClientSeo() {
     const chNum = currentState.currentChapter;
     const chData = CHAPTERS.find(c => c.number === chNum);
 
-    if (chData && chData.status === 'coming-soon') {
+    if (chNum === 361) {
+      document.title = "Blue Lock Chapter 361 - Manga Online | Blue Lock Reader";
+      setMeta('description', "Read Blue Lock Chapter 361 online. Continue reading the latest Blue Lock manga chapter on Blue Lock Reader.");
+    } else if (chNum === 362 || (chData && chData.status === 'coming-soon')) {
       const title = `Blue Lock Chapter ${chNum} - Manga Online | Blue Lock Reader`;
-      const desc  = `Read Blue Lock Chapter ${chNum} online. Chapter ${chNum} is coming soon. Join our Telegram group to get notified when the new chapter is released.`;
+      const desc  = `Blue Lock Chapter ${chNum} is coming soon. Join our Telegram group to get notified when the new chapter is released.`;
       document.title = title;
       setMeta('description', desc);
     } else {
