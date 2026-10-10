@@ -1442,14 +1442,26 @@ const CHAPTERS = [
   },
   {
     "number": 361,
-    "title": "Chapter 361"
+    "title": "Chapter 361 - Self-Abnegation"
   },
   {
     "number": 362,
-    "title": "Chapter 362",
+    "title": "Chapter 362 - Obsession"
+  },
+  {
+    "number": 363,
+    "title": "Chapter 363 - Taboo Game"
+  },
+  {
+    "number": 364,
+    "title": "Chapter 364 - One-Point Gamble"
+  },
+  {
+    "number": 365,
+    "title": "Chapter 365",
     "status": "coming-soon"
   }
-
 ];
+
 
 

@@ -15,25 +15,31 @@ setTimeout(async () => {
     const homeRes = await fetch('http://localhost:8899/');
     const homeHtml = await homeRes.text();
     console.log('Status:', homeRes.status);
-    console.log('Has Chapter 362 button:', homeHtml.includes('btn-ch362'));
-    console.log('Has readChapter(362):', homeHtml.includes('readChapter(362)'));
+    console.log('Has Chapter 365 button:', homeHtml.includes('btn-ch365'));
+    console.log('Has readChapter(365):', homeHtml.includes('readChapter(365)'));
 
-    console.log('\n--- Testing GET http://localhost:8899/chapter/361 ---');
-    const ch361Res = await fetch('http://localhost:8899/chapter/361');
-    const ch361Html = await ch361Res.text();
-    console.log('Status:', ch361Res.status);
-    console.log('Title:', (ch361Html.match(/<title>(.*?)<\/title>/) || [])[1]);
-    console.log('Meta Desc:', (ch361Html.match(/<meta name="description" content="(.*?)"/) || [])[1]);
+    console.log('\n--- Testing GET http://localhost:8899/chapter/364 ---');
+    const ch364Res = await fetch('http://localhost:8899/chapter/364');
+    const ch364Html = await ch364Res.text();
+    console.log('Status:', ch364Res.status);
+    console.log('Title:', (ch364Html.match(/<title>(.*?)<\/title>/) || [])[1]);
+    console.log('Meta Desc:', (ch364Html.match(/<meta name="description" content="(.*?)"/) || [])[1]);
 
-    console.log('\n--- Testing GET http://localhost:8899/chapter/362 ---');
-    const ch362Res = await fetch('http://localhost:8899/chapter/362');
-    const ch362Html = await ch362Res.text();
-    console.log('Status:', ch362Res.status);
-    console.log('Title:', (ch362Html.match(/<title>(.*?)<\/title>/) || [])[1]);
-    console.log('Meta Desc:', (ch362Html.match(/<meta name="description" content="(.*?)"/) || [])[1]);
-    console.log('Has H1 Blue Lock Chapter 362:', /<h1[^>]*>Blue Lock Chapter 362<\/h1>/i.test(ch362Html));
-    console.log('Has Telegram Link:', ch362Html.includes('https://t.me/ManganexChannel'));
-    console.log('Has Coming Soon Badge:', ch362Html.includes('CHAPTER 362 — COMING SOON') || ch362Html.includes('Chapter 362 — Coming Soon'));
+    console.log('\n--- Testing GET http://localhost:8899/chapter/365 ---');
+    const ch365Res = await fetch('http://localhost:8899/chapter/365');
+    const ch365Html = await ch365Res.text();
+    console.log('Status:', ch365Res.status);
+    console.log('Title:', (ch365Html.match(/<title>(.*?)<\/title>/) || [])[1]);
+    console.log('Meta Desc:', (ch365Html.match(/<meta name="description" content="(.*?)"/) || [])[1]);
+    console.log('Has H1 Blue Lock Chapter 365:', /<h1[^>]*>Blue Lock Chapter 365<\/h1>/i.test(ch365Html));
+    console.log('Has Telegram Link:', ch365Html.includes('https://t.me/ManganexChannel'));
+    console.log('Has Coming Soon Badge:', ch365Html.includes('Chapter 365 — Coming Soon'));
+
+    console.log('\n--- Testing GET http://localhost:8899/chapter-images?ch=364 ---');
+    const imgsRes = await fetch('http://localhost:8899/chapter-images?ch=364');
+    console.log('Status:', imgsRes.status);
+    const imgsData = await imgsRes.json();
+    console.log('Images count for Chapter 364:', imgsData.images ? imgsData.images.length : 0);
   } catch (err) {
     console.error('HTTP Test Error:', err);
   } finally {

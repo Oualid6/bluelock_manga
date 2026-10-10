@@ -2,6 +2,9 @@
   publish = "."
   functions = "netlify/functions"
 
+[images]
+  remote_images = ["https://images\\.mangafreak\\.me/.*"]
+
 [[redirects]]
   from = "/cover-image"
   to = "/.netlify/functions/cover-image"

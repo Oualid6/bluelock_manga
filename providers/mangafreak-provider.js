@@ -93,6 +93,23 @@ async function getChapterImages(chapterId) {
   while ((m = imgRegex.exec(html)) !== null) {
     images.push(m[1]);
   }
+
+  // If chapter is 364, also fetch part B (364b) so readers get the full 20-page chapter
+  if (String(chapterId) === '364') {
+    try {
+      const urlB = `${BASE_URL}/Read1_Blue_Lock_364b`;
+      const resB = await fetchWithRetry(urlB, { headers: FETCH_HEADERS }, 2, 1000);
+      const htmlB = await resB.text();
+      const imgRegexB = /<img[^>]+src="(https:\/\/images\.mangafreak\.me\/mangas\/blue_lock\/[^"]+)"/gi;
+      let mb;
+      while ((mb = imgRegexB.exec(htmlB)) !== null) {
+        images.push(mb[1]);
+      }
+    } catch (errB) {
+      console.warn('Could not load part 364b:', errB.message);
+    }
+  }
+
   return images;
 }
 

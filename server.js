@@ -338,8 +338,8 @@ const LOCALE_MAP = { en: 'en_US', es: 'es_ES', fr: 'fr_FR', de: 'de_DE', tr: 'tr
 function t(key, langCode) {
   const raw = (TRANSLATIONS[langCode] && TRANSLATIONS[langCode][key]) ||
               (TRANSLATIONS['EN'] && TRANSLATIONS['EN'][key]) || key;
-  const latestNum = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST[CHAPTERS_LIST.length - 1].number : 360;
-  const totalCount = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST.length : 360;
+  const latestNum = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST[CHAPTERS_LIST.length - 1].number : 364;
+  const totalCount = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST.length : 364;
   let str = raw.replace(/\{count\}/g, totalCount);
   if (key !== 'seo_title_chapter' && key !== 'seo_desc_chapter') {
     str = str.replace(/\{ch\}/g, latestNum);
@@ -442,9 +442,9 @@ function serveIndexWithSeo(req, res, pageType, param = null, langCode = 'EN', la
       const chData = CHAPTERS_LIST.find(c => c.number === chNum);
       const isSoon = chData && chData.status === 'coming-soon';
       pagePath = `/${langPrefix}/chapter/${chNum}`;
-      if (chNum === 361) {
-        title = `Blue Lock Chapter 361 - Manga Online | Blue Lock Reader`;
-        desc  = `Read Blue Lock Chapter 361 online. Continue reading the latest Blue Lock manga chapter on Blue Lock Reader.`;
+      if (chNum === 364) {
+        title = `Blue Lock Chapter 364 - Manga Online | Blue Lock Reader`;
+        desc  = `Read Blue Lock Chapter 364 online. Continue reading the latest Blue Lock manga chapter on Blue Lock Reader.`;
       } else if (isSoon) {
         title = `Blue Lock Chapter ${chNum} - Manga Online | Blue Lock Reader`;
         desc  = `Blue Lock Chapter ${chNum} is coming soon. Join our Telegram group to get notified when the new chapter is released.`;
@@ -520,7 +520,7 @@ function serveIndexWithSeo(req, res, pageType, param = null, langCode = 'EN', la
       const chData = CHAPTERS_LIST.find(c => c.number === chNum);
       const chTitle = chData ? chData.title : `Chapter ${chNum}`;
       const prevNum = chNum > 1 ? chNum - 1 : null;
-      const maxCh   = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST[CHAPTERS_LIST.length - 1].number : 360;
+      const maxCh   = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST[CHAPTERS_LIST.length - 1].number : 364;
       const nextNum = chNum < maxCh ? chNum + 1 : null;
       const articleSchema = {
         "@type": "Article",
@@ -570,8 +570,8 @@ function serveIndexWithSeo(req, res, pageType, param = null, langCode = 'EN', la
     const htmlLang = langCode === 'JP' ? 'ja' : langCode.toLowerCase();
     const htmlDir  = langCode === 'AR' ? ' dir="rtl"' : '';
 
-    const latestNum = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST[CHAPTERS_LIST.length - 1].number : 360;
-    const totalCount = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST.length : 360;
+    const latestNum = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST[CHAPTERS_LIST.length - 1].number : 364;
+    const totalCount = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST.length : 364;
 
     let parsedHtml = html
       .replace(/<html([^>]*) lang="[^"]*"([^>]*)>/, `<html$1 lang="${htmlLang}"${htmlDir}$2>`)
@@ -600,7 +600,7 @@ function serveIndexWithSeo(req, res, pageType, param = null, langCode = 'EN', la
       const arc = ARCS.find(a => chNum >= a.start && chNum <= a.end);
       const arcName = arc ? getArcName(arc.id, langCode) : '';
       const prevNum = chNum > 1 ? chNum - 1 : null;
-      const maxCh = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST[CHAPTERS_LIST.length - 1].number : 360;
+      const maxCh = CHAPTERS_LIST.length > 0 ? CHAPTERS_LIST[CHAPTERS_LIST.length - 1].number : 364;
       const nextNum = chNum < maxCh ? chNum + 1 : null;
 
       let ssrChapterHtml = '';
@@ -731,7 +731,7 @@ const server = http.createServer(async (req, res) => {
   }
 
   // ── 1. Proxy Route ──
-  if (pathname === '/proxy-image') {
+  if (pathname === '/proxy-image' || pathname === '/.netlify/images') {
     const imageUrl = parsedUrl.query.url;
     if (!imageUrl) { res.writeHead(400, { 'Content-Type': 'text/plain' }); res.end('Missing url parameter'); return; }
     try {

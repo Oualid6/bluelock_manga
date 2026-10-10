@@ -1775,12 +1775,16 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .legal-link-list { color: var(--text-2); line-height: 2; }
 .author-portrait { border-radius: 8px; max-width: 160px; }
 
-/* ── Hero Chapter 361 Button & Badges ── */
-.btn-ch361 {
+/* ── Hero Chapter Button & Badges ── */
+.btn-ch361,
+.btn-ch362,
+.btn-ch365 {
   border-color: rgba(56, 189, 248, 0.4);
   background: rgba(56, 189, 248, 0.08);
 }
-.btn-ch361:hover {
+.btn-ch361:hover,
+.btn-ch362:hover,
+.btn-ch365:hover {
   background: rgba(56, 189, 248, 0.16);
   border-color: var(--gold);
 }
