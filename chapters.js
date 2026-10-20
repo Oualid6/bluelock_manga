@@ -1457,9 +1457,12 @@ const CHAPTERS = [
     "title": "Chapter 364 - One-Point Gamble"
   },
   {
+    "number": 364.5,
+    "title": "Chapter 364b"
+  },
+  {
     "number": 365,
-    "title": "Chapter 365",
-    "status": "coming-soon"
+    "title": "Chapter 365 - Another View"
   }
 ];
 
