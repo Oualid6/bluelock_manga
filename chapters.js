@@ -1463,8 +1463,22 @@ const CHAPTERS = [
   {
     "number": 365,
     "title": "Chapter 365 - Another View"
+  },
+  {
+    "number": 366,
+    "title": "Chapter 366 - What Doesn't Yet Exist"
+  },
+  {
+    "number": 367,
+    "title": "Chapter 367 - Manufacture and Creation"
+  },
+  {
+    "number": 368,
+    "title": "Chapter 368 - Path to Failure"
+  },
+  {
+    "number": 369,
+    "title": "Chapter 369 - Resonance"
   }
+
 ];
-
-
-

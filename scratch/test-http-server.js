@@ -15,31 +15,22 @@ setTimeout(async () => {
     const homeRes = await fetch('http://localhost:8899/');
     const homeHtml = await homeRes.text();
     console.log('Status:', homeRes.status);
-    console.log('Has Chapter 365 button:', homeHtml.includes('btn-ch365'));
-    console.log('Has readChapter(365):', homeHtml.includes('readChapter(365)'));
+    console.log('Has Chapter 369 button:', homeHtml.includes('btn-ch369'));
+    console.log('Has readChapter(369):', homeHtml.includes('readChapter(369)'));
 
-    console.log('\n--- Testing GET http://localhost:8899/chapter/364 ---');
-    const ch364Res = await fetch('http://localhost:8899/chapter/364');
-    const ch364Html = await ch364Res.text();
-    console.log('Status:', ch364Res.status);
-    console.log('Title:', (ch364Html.match(/<title>(.*?)<\/title>/) || [])[1]);
-    console.log('Meta Desc:', (ch364Html.match(/<meta name="description" content="(.*?)"/) || [])[1]);
+    console.log('\n--- Testing GET http://localhost:8899/chapter/369 ---');
+    const ch369Res = await fetch('http://localhost:8899/chapter/369');
+    const ch369Html = await ch369Res.text();
+    console.log('Status:', ch369Res.status);
+    console.log('Title:', (ch369Html.match(/<title>(.*?)<\/title>/) || [])[1]);
+    console.log('Meta Desc:', (ch369Html.match(/<meta name="description" content="(.*?)"/) || [])[1]);
 
-    console.log('\n--- Testing GET http://localhost:8899/chapter/365 ---');
-    const ch365Res = await fetch('http://localhost:8899/chapter/365');
-    const ch365Html = await ch365Res.text();
-    console.log('Status:', ch365Res.status);
-    console.log('Title:', (ch365Html.match(/<title>(.*?)<\/title>/) || [])[1]);
-    console.log('Meta Desc:', (ch365Html.match(/<meta name="description" content="(.*?)"/) || [])[1]);
-    console.log('Has H1 Blue Lock Chapter 365:', /<h1[^>]*>Blue Lock Chapter 365<\/h1>/i.test(ch365Html));
-    console.log('Has Telegram Link:', ch365Html.includes('https://t.me/ManganexChannel'));
-    console.log('Has Coming Soon Badge:', ch365Html.includes('Chapter 365 — Coming Soon'));
-
-    console.log('\n--- Testing GET http://localhost:8899/chapter-images?ch=364 ---');
-    const imgsRes = await fetch('http://localhost:8899/chapter-images?ch=364');
+    console.log('\n--- Testing GET http://localhost:8899/chapter-images?ch=369 ---');
+    const imgsRes = await fetch('http://localhost:8899/chapter-images?ch=369');
     console.log('Status:', imgsRes.status);
     const imgsData = await imgsRes.json();
-    console.log('Images count for Chapter 364:', imgsData.images ? imgsData.images.length : 0);
+    console.log('Images count for Chapter 369:', imgsData.images ? imgsData.images.length : 0);
+    console.log('Sample image 1:', imgsData.images ? imgsData.images[0] : 'none');
   } catch (err) {
     console.error('HTTP Test Error:', err);
   } finally {

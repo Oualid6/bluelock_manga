@@ -1778,13 +1778,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* ── Hero Chapter Button & Badges ── */
 .btn-ch361,
 .btn-ch362,
-.btn-ch365 {
+.btn-ch365,
+.btn-ch369 {
   border-color: rgba(56, 189, 248, 0.4);
   background: rgba(56, 189, 248, 0.08);
 }
 .btn-ch361:hover,
 .btn-ch362:hover,
-.btn-ch365:hover {
+.btn-ch365:hover,
+.btn-ch369:hover {
   background: rgba(56, 189, 248, 0.16);
   border-color: var(--gold);
 }
